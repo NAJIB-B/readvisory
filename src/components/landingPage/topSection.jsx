@@ -13,11 +13,7 @@ const TopSection = () => {
 
   return (
     <div
-      style={{
-        backgroundImage: "url('https://i.ibb.co/WkwZZPz/ppty-1.png')",
-        backgroundSize: '55% 80%',
-      }}
-      className={`flex flex-col md:flex-row bg-primary-1 bg-contain bg-right-bottom bg-no-repeat  pt-[8rem] pb-4 text-white  px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl`}
+      className={`hero_section_image flex flex-col md:flex-row bg-primary-1 bg-bottom bg-contain sm:bg-right-bottom bg-no-repeat  pt-[8rem] pb-4 text-white  px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl`}
     >
       <div className="w-full sm:w-[40%]">
         <h1 className="font-bold text-[2rem] xs:text-[2.7rem]  sm:text-[2rem] md:text-[2.7rem] xm:text-[3rem] lg:text-[3.4rem] xl:text-[4rem] ">
@@ -31,14 +27,14 @@ const TopSection = () => {
           text={'Talk to us'}
           textStyle={'text-white text-[1rem]'}
           buttonStyle={
-            'border border-primary-2 rounded-[4px] mb-8 py-[0.4rem] px-[0.8rem] lg:py-[0.5rem] lg:px-[1.25rem]'
+            'mx-auto bg-secondary-10 sm:bg-secondary-3 sm:mx-1 border border-primary-2 mb-[6rem] sm:mb-8 rounded-[4px] mb-8 py-[0.4rem] px-[0.8rem] lg:py-[0.5rem] lg:px-[1.25rem]'
           }
           iconWidth={10}
           iconHeight={10}
           icon={skewedArrow}
           action={gotoTalkToUs}
         ></Button>
-        <div className="flex flex-row gap-3 text-secondary-8 items-center text-[0.8rem] xs:text-[0.9rem]">
+        <div className="flex flex-row gap-3 justify-center sm:justify-normal  text-white sm:text-secondary-8 items-center text-[0.8rem] xs:text-[0.9rem]">
           <p className="font-bold  xs:text-[1.1rem]">readvisory.ng</p>
           <p>ABUJA</p>
           <p>NIGERIA</p>

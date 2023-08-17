@@ -14,7 +14,7 @@ const WhoWeAre = () => {
       <div className="bg-primary-3 py-[4rem] px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl">
         <div className="text-center ">
           <h2 className="font-bold text-primary-1 text-[2rem]">Who We Are </h2>
-          <p className="text-secondary-8  w-[45%] py-4 mx-auto">
+          <p className="text-secondary-8  sm:w-[45%] py-4 mx-auto">
             We are <strong>Professionals</strong> from different backgrounds,
             with a <strong>shared passion </strong>
             for real estate
