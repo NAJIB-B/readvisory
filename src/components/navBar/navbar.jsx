@@ -34,11 +34,11 @@ const NavBar = () => {
   };
   return (
     <>
-      <div className="md:hidden">
+      <div className="md:hidden w-full   absolute">
         <MobileNav></MobileNav>
       </div>
-      <div className="hidden md:block">
-        <div className="flex flex-row justify-between bg-slate-500  p-container-base md:p-container-md lg:px-container-lg xl:px-container-xl ">
+      <div className="hidden md:block w-full   absolute">
+        <div className="flex flex-row justify-between p-container-base md:p-container-md lg:px-container-lg xl:px-container-xl ">
           <div className="flex flex-row items-center gap-3">
             {/* display search icon with different sizes based on screen size */}
             <span className="hidden lg:block">
@@ -53,7 +53,7 @@ const NavBar = () => {
             </p>
           </div>
           <div className="relative">
-            <span className="absolute after:content-[' '] bg-secondary-7 w-[1px] h-[3rem] -translate-y-2"></span>
+            <span className="absolute after:content-[' '] bg-secondary-3 w-[1px] h-[3rem] -translate-y-2"></span>
           </div>
           <div className="flex flex-row gap-3 lg:gap-8 xl:gap-[3rem] items-center">
             {navLinks.map((link, key) => {
@@ -94,6 +94,7 @@ const NavBar = () => {
             ></Button>
           </div>
         </div>
+        {/* <hr className="  w-full" /> */}
       </div>
     </>
   );

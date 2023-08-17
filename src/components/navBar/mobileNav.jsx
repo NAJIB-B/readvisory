@@ -20,7 +20,7 @@ const MobileNav = () => {
   };
   return (
     <>
-      <div className="flex flex-row items-center justify-between p-container-base xs:px-container-md bg-slate-500">
+      <div className="flex flex-row items-center justify-between p-container-base xs:px-container-md ">
         <div className="flex flex-row items-center gap-3">
           {/* display search icon with different sizes based on screen size */}
           <span className="hidden xs:block">

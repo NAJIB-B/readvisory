@@ -31,6 +31,7 @@ module.exports = {
           5: '#1E1E1E',
           6: '#FAFAFA',
           7: '#303032',
+          8: '#4F4F4F',
         },
       },
       padding: {
@@ -38,6 +39,9 @@ module.exports = {
         'container-lg': '5rem',
         'container-md': '2rem',
         'container-base': '1rem',
+      },
+      backgroundImage: {
+        'top-section-home-page': "url('/public/images/mainSectionImage.svg')",
       },
     },
   },
