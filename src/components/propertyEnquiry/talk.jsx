@@ -161,7 +161,7 @@ export const Talk =()=>{
                                     className="flex w-full mb-3"
                                     key={index}
                                 >
-                                    <div className="me-2">
+                                    <div className="me-3">
                                         <Text
                                             style="text-sm text-black"
                                             value={index+1}
@@ -190,7 +190,7 @@ export const Talk =()=>{
                                     className="flex w-full mb-3"
                                     key={index}
                                 >
-                                    <div className="me-2">
+                                    <div className="me-3">
                                         <Text
                                             style="text-sm text-black"
                                             value={index+1}
