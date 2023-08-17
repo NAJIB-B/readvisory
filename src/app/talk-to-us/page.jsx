@@ -1,9 +1,14 @@
-const TalkToUs = () => {
+import { SubRouteLayout } from "@/components/subRouteLayout";
+import frame from "../../../public/images/talkBG.png"
+import { Enquiry } from "@/components/propertyEnquiry/Enquiry";
+
+export default function TalkToUs (){
   return (
-    <div>
-      <h1>Talk To Us</h1>
-    </div>
+    <SubRouteLayout
+      title="Property Enquiry"
+      bgUrl={frame}
+    >
+        <Enquiry/>
+    </SubRouteLayout>
   );
 };
-
-export default TalkToUs;
