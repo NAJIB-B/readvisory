@@ -29,7 +29,7 @@ const TopSection = () => {
         </p>
         <Button
           text={'Talk to us'}
-          textStyle={'text-white text-[1rem] lg:text-[1.5rem]'}
+          textStyle={'text-white text-[1rem]'}
           buttonStyle={
             'border border-primary-2 rounded-[4px] mb-8 py-[0.4rem] px-[0.8rem] lg:py-[0.5rem] lg:px-[1.25rem]'
           }
