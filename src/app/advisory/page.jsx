@@ -1,9 +1,14 @@
-const Advisory = () => {
+import { SubRouteLayout } from "@/components/subRouteLayout";
+import Bgimage from "../../../public/images/and.png"
+import { Acquisition } from "@/components/advisoryComponent/acquisition";
+
+export default function Advisory (){
   return (
-    <div>
-      <h1>Advisory</h1>
-    </div>
+    <SubRouteLayout
+      title="ADVISORY"
+      bgUrl={Bgimage}
+    >
+        <Acquisition/>
+    </SubRouteLayout>
   );
 };
-
-export default Advisory;

@@ -19,6 +19,7 @@
 body {
 
 }
+
 .who_we_are_grid_container{
   display: grid;
   grid-template-columns: repeat(13, auto);
@@ -105,3 +106,64 @@ body {
       width: 100%;
   }
   }
+
+.BgImage{
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-light-cream{
+  background-color: #F7F4EE;
+}
+.formBg{
+  background:#FAFAFA;
+}
+.contactBg{
+  background-size: contain;
+}
+.bg-light-grey{
+  background-color: #DADADA;
+}
+.bg-dark-moderate{
+  background-color: #1E1E1E;
+}
+.border-dark-moderate{
+  border: 0.5px solid #767676;
+}
+.bg-light-black{
+  background-color:#7676802B;
+  border: 2px solid #7676802B;
+}
+.border-bottom{
+  border-bottom:1px solid #DADADA;
+}
+.c-deep-black{
+  color:#4F4F4F;
+}
+.c-top-black{
+  color:#767676;
+}
+.c-gold{
+  color:#CEA964;
+}
+.bg-thindark-black{
+  background-color:#222222;
+}
+.footer-img{
+  background-position-x: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 2px solid #7676802B;
+}
+.mt-1-{
+  margin-top: -0.1rem;
+}
+.hr-footer{
+  border-top: 1px solid #7676802B;
+}
+.link-icon{
+  right: 1rem;
+  top: 1.5rem;
+}
+

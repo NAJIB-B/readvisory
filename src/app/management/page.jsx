@@ -1,9 +1,15 @@
-const Management = () => {
+import { SubRouteLayout } from "@/components/subRouteLayout";
+import MgBgimage from "../../../public/images/manageBg.png"
+import { ManagementComponent } from "@/components/managementComponent/manage";
+
+export default function Management (){
   return (
-    <div>
-      <h1>Management</h1>
-    </div>
+    <SubRouteLayout
+      title="MANAGEMENT"
+      bgUrl={MgBgimage}
+    >
+        <ManagementComponent/>
+    </SubRouteLayout>
   );
 };
 
-export default Management;
