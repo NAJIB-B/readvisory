@@ -18,6 +18,7 @@ module.exports = {
     extend: {
       colors: {
         white: '#FFFFFF',
+        black: '#000000',
         primary: {
           1: '#222222',
           2: '#CEA964',
@@ -32,6 +33,7 @@ module.exports = {
           6: '#FAFAFA',
           7: '#303032',
           8: '#4F4F4F',
+          9: '#6B6969',
         },
       },
       padding: {
