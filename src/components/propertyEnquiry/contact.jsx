@@ -22,7 +22,7 @@ export const ContactUs =()=>{
             />
             <div className="bg-white rounded-lg grid grid-flow-row-dense lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 gap-4 m-4">
                 <div 
-                    className="py-14 px-12 contactBg rounded-r-xl xs:col-span-1 xxs:col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1"
+                    className="py-14 px-12 contactBg lg:rounded-r-xl md:rounded-r-xl xl:rounded-r-xl sm:rounded-r-none xs:rounded-r-none xxs:rounded-r-none xs:col-span-1 xxs:col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1"
                      style={{
                         backgroundImage: `url(${Bg.src})`,
                         width: '100%',

@@ -140,7 +140,7 @@ export const Footer =()=>{
                     />
                 </div>
                 <div className="flex items-center">
-                    <div className="me-1 w-12 h-12 relative">
+                    <div className="me-1 w-12 h-12 relative mt-2">
                         <Image
                             src={icon366}
                             alt="object not found"

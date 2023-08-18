@@ -11,7 +11,7 @@ export const SubRouteLayout =({children,title,bgUrl})=>{
                     width: '100%',
                     height: '100%',
                 }}
-                className="p-20 w-full border BgImage"
+                className="px-20 pt-36 pb-20 w-full border BgImage"
             >
                 <Text
                     style="my-10 text-2xl  text-center border-black text-white font-bold"

@@ -27,7 +27,7 @@ export const WhiteForm =()=>{
     }
     return(
         <form
-            className="py-12 lg:px-10 md:px-10 sm:px-2 xs:px-2 xxs:px-2 xl:px-10"
+            className="py-12 lg:px-10 md:px-10 sm:px-4 xs:px-4 xxs:px-4 xl:px-10"
             onSubmit={handleSubmit(SubmitHandler)}
         >
             <div  className="grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-5">
@@ -51,7 +51,7 @@ export const WhiteForm =()=>{
                         },
                         {
                             title:"email",
-                            labelName:"Email",
+                            labelName:"Email*",
                             selectArrayOption:null,
                             type:"email",
                             error:errors.email,
@@ -59,7 +59,7 @@ export const WhiteForm =()=>{
                         },
                         {
                             title:"phoneNumber",
-                            labelName:"Phone Number",
+                            labelName:"Phone Number*",
                             selectArrayOption:null,
                             type:"number",
                             error:errors.phoneNumber,
