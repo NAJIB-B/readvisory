@@ -12,6 +12,7 @@ import Button from '../button/button';
 const MobileNav = () => {
   const router = useRouter();
   const gotoTalkToUs = () => {
+    toggleNav();
     router.push('/talk-to-us');
   };
   const [mobileNav, setMobileNav] = useState(false);
