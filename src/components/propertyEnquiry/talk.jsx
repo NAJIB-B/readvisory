@@ -39,7 +39,7 @@ export const Talk =()=>{
     return(
         <form 
             onSubmit={handleSubmit(SubmitHandler)}
-            className="py-10 formBg px-2"
+            className="py-10 formBg px-4"
         >
             <div className="m-auto xxs:w-full xs:w-full sm:w-full md:w-3/4 lg:w-3/4 xl:w-3/4 m-auto grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-28 m-auto">
                 {

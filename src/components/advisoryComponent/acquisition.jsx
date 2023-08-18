@@ -16,7 +16,7 @@ export const Acquisition =()=>{
             <div className="py-20 bg-light-cream">
                 <Text
                     value="ACQUISITION, INVESTMENT & REVIEWS"
-                    style="text-center font-semibold text-2xl mb-6"
+                    style="text-center font-semibold text-2xl mb-6 mx-3"
                 />
                 <div className="flex flex-wrap justify-between mb-8 px-14">
                     <div className="p-8 md:w-1/2 xl:w-1/2 xl:w-1/2 sm:w-full xs:w-full xxs:w-full bg-light-grey xl:rounded-l-xl md:rounded-l-xl xl:rounded-l-xl xl:rounded-tr-none md:rounded-tr-none xl:rounded-tr-none sm:rounded-t-xl xs:rounded-t-xl xxs:rounded-t-xl">
@@ -29,7 +29,7 @@ export const Acquisition =()=>{
                             5 simple steps."
                         />
                     </div>
-                    <div className="p-8 grid xs:grid-cols-2 xxs:grid-cols-2 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-2 gap-2 bg-dark-moderate md:w-1/2 xl:w-1/2 xl:w-1/2 sm:w-full xs:w-full xxs:w-full xl:rounded-r-xl md:rounded-r-xl sm:rounded-b-xl xs:rounded-b-xl xxs:rounded-b-xl xl:rounded-r-xl xl:rounded-bl-none md:rounded-bl-none xl:rounded-bl-none">
+                    <div className="p-8 grid xs:grid-cols-1 xxs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-2 bg-dark-moderate md:w-1/2 xl:w-1/2 xl:w-1/2 sm:w-full xs:w-full xxs:w-full xl:rounded-r-xl md:rounded-r-xl sm:rounded-b-xl xs:rounded-b-xl xxs:rounded-b-xl xl:rounded-r-xl xl:rounded-bl-none md:rounded-bl-none xl:rounded-bl-none">
                         {[
                             {
                                 icon:plan,
@@ -145,7 +145,7 @@ export const Acquisition =()=>{
                             value="Real estate investment can continue to yield results long after the lifetime of the initial investor, therefore they are very popular generational gifts. At R.E Advisory, we guide clients through the legal and regulatory framework and provide a platform for the safe transfer of these gift as intended."
                         />
                     </div>
-                    <div className="xl:w-1/2 xl:w-1/2 md:w-1/2 sm:w-full xs:w-full relative sm:h-96 xs:h-96 md:h-auto xl:h-auto xl:h-auto">
+                    <div className="xl:w-1/2 xl:w-1/2 md:w-1/2 sm:w-full xs:w-full xxs:w-full relative sm:h-96 xxs:h-96 xs:h-96 md:h-auto xl:h-auto xl:h-auto">
                         <Image
                             src={frame}
                             alt="object not found"

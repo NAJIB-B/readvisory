@@ -85,7 +85,8 @@ body {
   background:#FAFAFA;
 }
 .contactBg{
-  background-size: contain;
+  background-size: conver;
+  background-repeat: no-repeat;
 }
 .bg-light-grey{
   background-color: #DADADA;
