@@ -27,20 +27,12 @@ export const WhiteForm = () => {
       <div className="grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-5">
         {[
           {
-            title: 'firstName',
-            labelName: 'First Name',
+            title: 'Name',
+            labelName: 'Name',
             selectArrayOption: null,
             type: 'text',
             error: errors.firstName,
             placeHold: 'I',
-          },
-          {
-            title: 'lastName',
-            labelName: 'Last Name*',
-            selectArrayOption: null,
-            type: 'text',
-            placeHold: 'Doe',
-            error: errors.lastName,
           },
           {
             title: 'email',
@@ -104,25 +96,22 @@ export const WhiteForm = () => {
       <div>
         <Text style="font-semibold text-sm mb-4" value="Select Subject?" />
         <div className="flex mb-5 flex-wrap">
-          {[
-            'Resedential',
-            'commercial',
-            'Property type',
-            'General EnQuiry',
-          ].map((rad, index) => {
-            return (
-              <InputField
-                key={index}
-                name="radname"
-                type="radio"
-                labelTitle={rad}
-                labelStyle="text-xs font-bold text-start text-black mb-1 me-8"
-                register={register}
-                errors={errors.radname}
-                style="text-start p-3 text-xs me-2"
-              />
-            );
-          })}
+          {['Advisory', 'Development', 'Management', 'General EnQuiry'].map(
+            (rad, index) => {
+              return (
+                <InputField
+                  key={index}
+                  name="radname"
+                  type="radio"
+                  labelTitle={rad}
+                  labelStyle="text-xs font-bold text-start text-black mb-1 me-8"
+                  register={register}
+                  errors={errors.radname}
+                  style="text-start p-3 text-xs me-2"
+                />
+              );
+            }
+          )}
         </div>
         <div className="mb-5">
           <InputField
