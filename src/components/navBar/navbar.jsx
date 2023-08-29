@@ -7,6 +7,15 @@ import logo from '../../../public/images/logo.svg';
 import searchIcon from '../../../public/images/Search.svg';
 import Button from '../button/button';
 import MobileNav from './mobileNav';
+import { useState } from 'react';
+
+export const navOptions = {
+  home: 'Home',
+  advisory: 'Advisory',
+  development: 'Development',
+  management: 'Management',
+  talkToUs: 'TalkToUs',
+};
 
 export const navLinks = [
   {
@@ -29,8 +38,10 @@ export const navLinks = [
 
 const NavBar = () => {
   const router = useRouter();
+  const [activeNav, setActiveNav] = useState(navOptions.home);
   const gotoTalkToUs = () => {
     router.push('/talk-to-us');
+    setActiveNav(navOptions.talkToUs);
   };
   return (
     <>
@@ -61,7 +72,10 @@ const NavBar = () => {
                 <Link
                   href={link.link}
                   key={key}
-                  className="text-white font-semibold text-[0.8rem] lg:text-[1rem]"
+                  onClick={() => setActiveNav(link.name)}
+                  className={`${
+                    activeNav == link.name ? 'text-primary-2' : 'text-white'
+                  } font-semibold text-[0.8rem] lg:text-[1rem]`}
                 >
                   {link.name}
                 </Link>

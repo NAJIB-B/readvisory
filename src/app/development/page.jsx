@@ -1,9 +1,13 @@
-const Development = () => {
+import { SubRouteLayout } from '@/components/subRouteLayout';
+import bgImg from '../../../public/images/developmentBg.png';
+import Development from '@/components/developmentComponent/development';
+
+const DevelopmentPage = () => {
   return (
-    <div>
-      <h1>Development</h1>
-    </div>
+    <SubRouteLayout title="development" bgUrl={bgImg}>
+      <Development></Development>
+    </SubRouteLayout>
   );
 };
 
-export default Development;
+export default DevelopmentPage;

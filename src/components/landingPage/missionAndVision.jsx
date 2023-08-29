@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import missionImg from '../../../public/images/missionImg.svg';
+import visionImg from '../../../public/images/visionImg.svg';
 
 const MissionAndVision = () => {
   return (
@@ -30,13 +31,13 @@ const MissionAndVision = () => {
       <div className="flex flex-col-reverse justify-between gap-4  md:flex-row">
         <div className="md:w-[50%]">
           <Image
-            src={missionImg}
+            src={visionImg}
             alt="beautiful"
             className="rounded-[2.43rem]"
           ></Image>
         </div>
         <div className="md:w-[50%] relative">
-          <div className="md:w-[85%] text-center  md:absolute md:right-0">
+          <div className="md:w-[85%] text-center md:text-left  md:absolute md:right-0">
             <h2 className="font-bold text-secondary-1 pb-4 text-[2rem]">
               Our Vision
             </h2>

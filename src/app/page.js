@@ -13,7 +13,7 @@ export default function Home() {
       <WhatWeDo></WhatWeDo>
       <MissionAndVision></MissionAndVision>
       <BottomSection></BottomSection>
-      <Footer></Footer>
+      <Footer paddingTop={'12rem'}></Footer>
     </main>
   );
 }

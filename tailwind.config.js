@@ -35,6 +35,8 @@ module.exports = {
           8: '#4F4F4F',
           9: '#6B6969',
           10: '#252525',
+          11: '#191919',
+          12: '#767676',
         },
       },
       padding: {
@@ -45,6 +47,9 @@ module.exports = {
       },
       backgroundImage: {
         'top-section-home-page': "url('/public/images/mainSectionImage.svg')",
+      },
+      boxShadow: {
+        devPage: '0px 16px 24px 0px rgba(25, 25, 25, 0.10)',
       },
     },
   },
