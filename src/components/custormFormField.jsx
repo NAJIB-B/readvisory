@@ -4,11 +4,14 @@ export const InputField = ({
   name,
   type,
   errors,
+  value,
   register,
+  required,
   labelTitle,
   selectOption,
   selectArrayOption,
   defaultValue,
+  id,
   subTitle,
   labelStyle,
   style,
@@ -21,27 +24,39 @@ export const InputField = ({
             className={style}
             type={type}
             name={name}
+            value={value}
             placeholder={placeHolder}
-            {...register(`${name}`)}
+            {...register(`${name}`, {
+              required: required
+                ? `${labelTitle ? labelTitle : name} field is required`
+                : '',
+            })}
           />
           <label className={labelStyle} htmlFor={name}>
             {labelTitle}
           </label>
+          {errors && <p className="text-red-500 ">{errors.message}</p>}
         </div>
       );
       break;
 
     case 'checkbox':
       return (
-        <div className="flex mb-3 items-center">
+        <div className="flex mb-3 items-center gap-4">
           <input
             className={style}
             type={type}
             name={name}
+            id={id}
+            value={value}
             placeholder={placeHolder}
-            {...register(`${name}`)}
+            {...register(`${name}`, {
+              required: required
+                ? `${labelTitle ? labelTitle : name} field is required`
+                : '',
+            })}
           />
-          <label className={labelStyle} htmlFor={name}>
+          <label className={labelStyle} htmlFor={id}>
             {labelTitle}
           </label>
         </div>
@@ -60,7 +75,9 @@ export const InputField = ({
             name={name}
             defaultValue={defaultValue ? defaultValue : null}
             {...register(`${name}`, {
-              required: `${labelTitle ? labelTitle : name} field is invalid`,
+              required: required
+                ? `${labelTitle ? labelTitle : name} field is required`
+                : '',
             })}
           >
             {selectArrayOption &&
@@ -92,7 +109,7 @@ export const InputField = ({
             defaultValue={defaultValue ? defaultValue : null}
             placeholder={placeHolder}
             {...register(`${name}`, {
-              required: `${labelTitle ? labelTitle : name} field is invalid`,
+              required: `${labelTitle ? labelTitle : name} field is required`,
               minLength: {
                 value: 8,
                 message: 'password must not be less than 8 characters',
@@ -120,7 +137,9 @@ export const InputField = ({
             defaultValue={defaultValue ? defaultValue : null}
             placeholder={placeHolder}
             {...register(`${name}`, {
-              required: `${labelTitle ? labelTitle : name} field is invalid`,
+              required: required
+                ? `${labelTitle ? labelTitle : name} field is required`
+                : '',
             })}
           />
           {errors && <p className="text-red-500 ">{errors.message}</p>}
