@@ -18,7 +18,9 @@ export const Talk = () => {
     watch,
     formState: { errors },
   } = useForm({
-    defaultValues: {},
+    defaultValues: {
+      modeOfContact: 'Email',
+    },
   });
 
   const watchMode = watch('mode');
