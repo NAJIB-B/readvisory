@@ -6,6 +6,7 @@ import { Toaster, toast } from 'react-hot-toast';
 import Button from '../button/button';
 import { InputField } from '../custormFormField';
 import { Text } from '../Text';
+import axios from 'axios';
 
 export const Talk = () => {
   const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
@@ -44,6 +45,21 @@ export const Talk = () => {
     range,
     income,
   }) => {
+    const data = {
+      prefered_mode_of_contact: modeOfContact,
+      contact_detail: contactDetail,
+      age: age,
+      objectives: objectives,
+      purpose: purpose,
+      location: location,
+      property_type: property,
+      room_number: roomNo,
+      mode_of_acquisition: mode,
+      mode_of_acquisition_description: modeDescription,
+      price_range: range,
+      monthly_net_income: income,
+    };
+
     emailjs
       .send(
         serviceId,
@@ -65,14 +81,24 @@ export const Talk = () => {
         publicKey
       )
       .then(() => {
-        toast.success('Successfully sent');
-        resetField('location');
-        resetField('objectives');
-        resetField('roomNo');
-        resetField('contactDetail');
-        resetField('modeDescription');
+        axios
+          .post(
+            'https://sheet.best/api/sheets/3b15700c-65b3-416d-9c48-0101924a5e64',
+            data
+          )
+          .then((res) => {
+            toast.success('Successfully sent');
+            resetField('location');
+            resetField('objectives');
+            resetField('roomNo');
+            resetField('contactDetail');
+            resetField('modeDescription');
+          });
       })
-      .catch(() => toast.error('Something went wrong. Try again'));
+      .catch((err) => {
+        console.log(err);
+        toast.error('Something went wrong. Try again');
+      });
   };
 
   const contactModePlaceHolder = () => {
