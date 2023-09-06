@@ -12,7 +12,7 @@ const Development = () => {
       <div className="bg-primary-3 ">
         <h2 className="font-bold text-secondary-10 mx-auto text-center pb-4 md:py-[5rem] text-[2rem] md:w-[50%]">
           We offer
-          <span className="text-primary-2">residential </span>
+          <span className="text-primary-2"> residential </span>
           and
           <span className="text-primary-2">commercial </span>
           property development services.
