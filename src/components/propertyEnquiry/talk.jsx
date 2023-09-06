@@ -2,11 +2,10 @@
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import { Toaster, toast } from 'react-hot-toast';
+import axios from 'axios';
 
 import Button from '../button/button';
 import { InputField } from '../custormFormField';
-import { Text } from '../Text';
-import axios from 'axios';
 
 export const Talk = () => {
   const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
@@ -96,7 +95,6 @@ export const Talk = () => {
           });
       })
       .catch((err) => {
-        console.log(err);
         toast.error('Something went wrong. Try again');
       });
   };

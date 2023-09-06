@@ -20,8 +20,8 @@ body {
 
 }
 .swiper-pagination-bullet-active{
-  background-color: #CEA964;
-  color: #CEA964;
+  background-color: #CEA964 !important;
+ 
 }
 
 .hero_section_image{
@@ -80,6 +80,10 @@ body {
 }
 .devPageShadowLeft{
   box-shadow: -15px 9px 0 0 rgb(25,25,25), -16px 10px 0 0 rgba(206,169,100,1);
+}
+.advisoryPageGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
 }
 
 .BgImage{

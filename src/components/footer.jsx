@@ -40,11 +40,13 @@ export const Footer = ({ paddingTop = '3.5rem' }) => {
               />
             </div>
             <div className="xs:w-full sm:w-full md:w-2/3 lg:w-2/3 mb-5">
-              <span className="text-4xl font-bold text-white">
-                Allow Us bring your{' '}
-                <span className="text-4xl font-bold c-gold mb-5">
-                  dreams to Life
-                </span>
+              <span className="text-primary-2 text-4xl font-bold">
+                Achieving
+              </span>
+              <br />
+              <span className="text-4xl font-bold text-white mb-5">
+                your Real Estate
+                <span className=" text-primary-2 "> Goals</span>
               </span>
             </div>
           </div>
@@ -91,10 +93,10 @@ export const Footer = ({ paddingTop = '3.5rem' }) => {
         </div>
       </div>
       <hr className="hr-footer mb-3" />
-      <div className="flex flex-wrap justify-between pt-6">
-        <div className="flex mb-2">
+      <div className="flex flex-wrap justify-between items-center pt-6">
+        <div className="flex mb-2 items-center">
           <div className="flex me-3">
-            <span className="w-4 h-4 me-1 relative">
+            <span className="w-8 h-8 me-1 relative">
               <Image
                 src={icon}
                 alt="object not found"
@@ -103,11 +105,11 @@ export const Footer = ({ paddingTop = '3.5rem' }) => {
                 placeholder="blur"
               />
             </span>
-            <span className="font-extrabold text-xs c-top-black">
+            <span className="font-extrabold text-[1.2rem] c-top-black">
               readvisory.ng
             </span>
           </div>
-          <div className="relative w-6 h-6 me-3">
+          <div className="relative w-4 h-4 me-3 mx-4">
             <Image
               src={insta}
               alt="object not found"
@@ -116,7 +118,7 @@ export const Footer = ({ paddingTop = '3.5rem' }) => {
               placeholder="blur"
             />
           </div>
-          <div className="relative w-6 h-6">
+          <div className="relative w-4 h-4 ">
             <Image
               src={face}
               alt="object not found"

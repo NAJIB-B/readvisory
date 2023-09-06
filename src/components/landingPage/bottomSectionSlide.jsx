@@ -37,7 +37,7 @@ const SliderWithPreview = ({ slides }) => {
         keyboard={{ enabled: true, onlyInViewport: true }}
         centeredSlides={true}
         loop={true}
-        pagination={{ clickable: true, dynamicBullets: true }}
+        pagination={{ dynamicMainBullets: true, dynamicBullets: true }}
         breakpoints={{
           768: {
             slidesPerView: 3,

@@ -9,7 +9,9 @@ const WhatWeDo = () => {
   return (
     <div className="bg-white py-[4rem] px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl">
       <div className="text-center pb-[2rem]">
-        <h2 className="font-bold text-primary-1 text-[2rem]">Who We Are </h2>
+        <h2 className="font-bold text-primary-1 text-[2rem]">what we do:</h2>
+        <h2 className="font-bold text-primary-2 text-[3rem]">SUPPORT</h2>
+
         <p className="text-secondary-8  md:w-[45%] py-4 mx-auto">
           Real Estate can be a complex journey, we support our clients through
           the process by providing strategic advise aimed at maximizing value
@@ -26,11 +28,11 @@ const WhatWeDo = () => {
           <Image
             src={advisoryIcon}
             alt="advisory icon"
-            className="mx-auto"
+            className="mx-auto py-2"
             width={80}
           ></Image>
           <h2 className="text-primary-3 font-bold text-[1.5rem]">Advisory</h2>
-          <p className="text-secondary-9 mx-auto md:w-[90%]">
+          <p className="text-secondary-9 mx-auto md:w-[90%] py-2 leading-[2rem]">
             Investments, Acquisitions, Financing, Reviews, Transfers & Estate
             Planning
           </p>
@@ -45,13 +47,13 @@ const WhatWeDo = () => {
           <Image
             src={developmentIcon}
             alt="advisory icon"
-            className="mx-auto"
+            className="mx-auto py-2"
             width={80}
           ></Image>
           <h2 className="text-primary-3 font-bold text-[1.5rem]">
             Development
           </h2>
-          <p className="text-secondary-9 mx-auto md:w-[90%]">
+          <p className="text-secondary-9 mx-auto md:w-[90%] py-2 leading-[2rem]">
             Property Development, Development Planning, Renovations & Project
             Management
           </p>
@@ -66,11 +68,11 @@ const WhatWeDo = () => {
           <Image
             src={managementIcon}
             alt="advisory icon"
-            className="mx-auto"
+            className="mx-auto py-2"
             width={80}
           ></Image>
           <h2 className="text-primary-3 font-bold text-[1.5rem]">Management</h2>
-          <p className="text-secondary-9 mx-auto md:w-[90%]">
+          <p className="text-secondary-9 mx-auto md:w-[90%] py-2 leading-[2rem]">
             Facility Management, Agency, Tenancy & Lease Management
           </p>
         </div>
