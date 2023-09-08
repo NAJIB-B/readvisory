@@ -54,10 +54,10 @@ export const WhiteForm = () => {
     <>
       <Toaster position="top-center" reverseOrder={false}></Toaster>
       <form
-        className="py-12 lg:px-10 md:px-10 sm:px-4 xs:px-4 xxs:px-4 xl:px-10"
+        className="py-12 lg:px-10 md:px-10 sm:px-4 xs:px-4 xxs:px-4 xl:px-10 bg-white"
         onSubmit={handleSubmit(SubmitHandler)}
       >
-        <div className="grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-5">
+        <div className="grid w-full xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-5">
           {[
             {
               title: 'name',

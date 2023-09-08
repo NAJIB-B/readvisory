@@ -1,12 +1,13 @@
+'use client';
 import { createContext } from 'react';
 import { useState } from 'react';
 
 export const navOptions = {
-  home: 'home',
-  advisory: 'advisory',
-  development: 'development',
-  management: 'management',
-  talkToUs: 'talkToUs',
+  home: 'Home',
+  advisory: 'Advisory',
+  development: 'Development',
+  management: 'Management',
+  talkToUs: 'TalkToUs',
 };
 
 export const NavContext = createContext('');

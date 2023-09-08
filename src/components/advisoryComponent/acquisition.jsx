@@ -1,15 +1,24 @@
 'use client';
+
+import { useEffect, useContext } from 'react';
 import Image from 'next/legacy/image';
+
 import { Text } from '../Text';
+import { navOptions } from '@/context/nav';
+import { NavContext } from '@/context/nav';
 import { LinedInfo } from './LinedInfo';
 import plan from '../../../public/images/Group 80401.png';
-import scout from '../../../public/images/Group 80392.png';
 import nego from '../../../public/images/Group 80394.png';
-import doc from '../../../public/images/Group 80395.png';
 import perf from '../../../public/images/Group 80396.png';
 import frame from '../../../public/images/Frame 1311.png';
 
 export const Acquisition = () => {
+  const { setActiveNav } = useContext(NavContext);
+
+  useEffect(() => {
+    setActiveNav(navOptions.advisory);
+  }, []);
+
   return (
     <div>
       <div className="py-20 bg-light-cream">
@@ -43,7 +52,7 @@ export const Acquisition = () => {
               return (
                 <div
                   key={index}
-                  className="flex items-center justify-center mb-6"
+                  className="flex items-center md:justify-center mb-6"
                 >
                   <div className="relative w-14 h-14 me-2">
                     <Image
@@ -63,8 +72,8 @@ export const Acquisition = () => {
                 </div>
               );
             })}
-            <div className="translate-x-[50%]">
-              <div className="flex items-center justify-center mb-6">
+            <div className="md:translate-x-[50%]">
+              <div className="flex items-center md:justify-center mb-6">
                 <div className="relative w-14 h-14 me-2">
                   <Image
                     src={perf}
@@ -127,23 +136,23 @@ export const Acquisition = () => {
                             Estate Planning"
           />
           <Text
-            style="text-sm text-white font-bold mb-3"
+            style="text-2xl text-white font-bold mb-3"
             value="Sale Coordination"
           />
           <Text
-            style="text-xs font-semibold text-white mb-2"
+            style="text-[1.2rem] font-semibold text-white mb-2"
             value="Looking to sell a property?"
           />
           <Text
-            style="text-xs leading-5 c-top-black xl:w-1/2 xl:w-1/2 md:w-1/2 sm:w-full xs:w-full mb-4"
+            style="text-[1rem] leading-5 c-top-black xl:w-1/2 xl:w-1/2 md:w-1/2 sm:w-full xs:w-full mb-4"
             value="We organise sales of single properties or portfolios of properties, our services also include guidance on sale and leaseback, due- diligence and suitable agency arrangements."
           />
           <Text
-            style="text-white text-sm font-bold mb-2"
+            style="text-white text-[1.2rem] font-bold mb-2"
             value="Estate Planning"
           />
           <Text
-            style="text-xs leading-5 c-top-black xl:w-1/2 xl:w-1/2 md:w-1/2 sm:w-full xs:w-full mb-4"
+            style="text-[1rem] leading-5 c-top-black xl:w-1/2 xl:w-1/2 md:w-1/2 sm:w-full xs:w-full mb-4"
             value="Real estate investment can continue to yield results long after the lifetime of the initial investor, therefore they are very popular generational gifts. At R.E Advisory, we guide clients through the legal and regulatory framework and provide a platform for the safe transfer of these gift as intended."
           />
         </div>

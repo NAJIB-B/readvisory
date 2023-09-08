@@ -1,11 +1,18 @@
 'use client';
+import { useEffect, useContext } from 'react';
 
+import { NavContext, navOptions } from '@/context/nav';
 import skewedArrow from '../../../public/images/skewedArrow.svg';
 import backgroundImage from '../../../public/images/mainSectionImage.svg';
 import Button from '../button/button';
 import { useRouter } from 'next/navigation';
 
 const TopSection = () => {
+  const { setActiveNav } = useContext(NavContext);
+
+  useEffect(() => {
+    setActiveNav(navOptions.home);
+  }, []);
   const router = useRouter();
   const gotoTalkToUs = () => {
     router.push('/talk-to-us');
@@ -13,7 +20,7 @@ const TopSection = () => {
 
   return (
     <div
-      className={`hero_section_image flex flex-col md:flex-row bg-primary-1 bg-bottom bg-contain sm:bg-right-bottom bg-no-repeat  pt-[8rem] pb-4 text-white  px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl`}
+      className={`hero_section_image h-[100vh] flex flex-col md:flex-row bg-primary-1 bg-bottom bg-contain sm:bg-right-bottom bg-no-repeat  pt-[8rem] pb-4 text-white  px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl`}
     >
       <div className="w-full sm:w-[40%]">
         <h1 className="font-bold text-[2rem] xs:text-[2.7rem]  sm:text-[2rem] md:text-[2.7rem] xm:text-[3rem] lg:text-[3.4rem] xl:text-[4rem] ">

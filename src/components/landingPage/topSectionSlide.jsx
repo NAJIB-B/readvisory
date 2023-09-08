@@ -19,20 +19,21 @@ import 'swiper/css/effect-creative';
 import Image from 'next/image';
 
 import frame1 from '../../../public/images/frame1.jpeg';
-import frame2 from '../../../public/images/frame2.jpeg';
 import frame3 from '../../../public/images/frame3.jpeg';
-import frame4 from '../../../public/images/frame4.jpeg';
 
-const slideImages = [frame1, frame2, frame3, frame4];
+const slideImages = [frame1, frame3];
 
 const TopSectionSlide = () => {
   return (
-    <div className="py-[4rem] px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl">
+    <div className="py-[4rem] sm:px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl">
       <div className="">
         <Swiper
           modules={[Navigation, Keyboard]}
           navigation={true}
           loop={true}
+          autoplay={{
+            delay: 500,
+          }}
           keyboard={{ enabled: true, onlyInViewport: true }}
         >
           {slideImages.map((item, key) => {

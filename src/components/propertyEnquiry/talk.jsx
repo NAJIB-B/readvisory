@@ -42,7 +42,6 @@ export const Talk = () => {
     mode,
     modeDescription,
     range,
-    income,
   }) => {
     const data = {
       prefered_mode_of_contact: modeOfContact,
@@ -56,7 +55,6 @@ export const Talk = () => {
       mode_of_acquisition: mode,
       mode_of_acquisition_description: modeDescription,
       price_range: range,
-      monthly_net_income: income,
     };
 
     emailjs
@@ -75,7 +73,6 @@ export const Talk = () => {
           mode,
           other_mode_of_acquisition: modeDescription,
           range,
-          income,
         },
         publicKey
       )
@@ -324,21 +321,6 @@ export const Talk = () => {
               type: 'select',
               error: errors.range,
               subTitle: null,
-            },
-            {
-              title: 'income',
-              labelName: 'Monthly Net income',
-              selectArrayOption: [
-                'Under 100,0000',
-                '100,000 - 1,000,000',
-                '1,000,000 - 3,000,000',
-                '3,000,000 - 5,000,000',
-                'Over 5,000,000',
-              ],
-              type: 'select',
-              placeHold: 'select income',
-              error: errors.range,
-              subTitle: '(for calculation of marriage repayment)',
             },
           ].map((option, index) => {
             const {

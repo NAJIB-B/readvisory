@@ -1,5 +1,8 @@
+'use client';
 import Image from 'next/image';
+import { useEffect, useContext } from 'react';
 
+import { NavContext, navOptions } from '@/context/nav';
 import topBg from '../../../public/images/devSecondBg.svg';
 import devPlaning from '../../../public/images/devPlaning.svg';
 import consrtFinace from '../../../public/images/consrtFinance.svg';
@@ -7,6 +10,11 @@ import devRenovation from '../../../public/images/devRenovation.svg';
 import devProjectPlaning from '../../../public/images/devProjectPlaning.svg';
 
 const Development = () => {
+  const { setActiveNav } = useContext(NavContext);
+
+  useEffect(() => {
+    setActiveNav(navOptions.development);
+  }, []);
   return (
     <div>
       <div className="bg-primary-3 ">
@@ -14,7 +22,7 @@ const Development = () => {
           We offer
           <span className="text-primary-2"> residential </span>
           and
-          <span className="text-primary-2">commercial </span>
+          <span className="text-primary-2"> commercial </span>
           property development services.
         </h2>
         <Image

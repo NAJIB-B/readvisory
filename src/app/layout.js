@@ -1,6 +1,7 @@
 import './globals.css';
 import { Poppins } from 'next/font/google';
 import NavBar from '@/components/navBar/navbar';
+import { NavProvider } from '@/context/nav';
 
 const inter = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -36,8 +37,10 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="/site.webmanifest"></link>
       </head>
       <body className={inter.className}>
-        <NavBar></NavBar>
-        {children}
+        <NavProvider>
+          <NavBar></NavBar>
+          {children}
+        </NavProvider>
       </body>
     </html>
   );

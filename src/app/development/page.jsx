@@ -4,7 +4,7 @@ import Development from '@/components/developmentComponent/development';
 
 const DevelopmentPage = () => {
   return (
-    <SubRouteLayout title="development" bgUrl={bgImg}>
+    <SubRouteLayout title="DEVELOPMENT" bgUrl={bgImg}>
       <Development></Development>
     </SubRouteLayout>
   );
