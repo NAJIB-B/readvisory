@@ -23,7 +23,7 @@ const TopSection = () => {
       className={`hero_section_image h-[100vh] flex flex-col md:flex-row bg-primary-1 bg-bottom bg-contain sm:bg-right-bottom bg-no-repeat  pt-[8rem] pb-4 text-white  px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl`}
     >
       <div className="w-full sm:w-[40%]">
-        <h1 className="font-bold text-[2rem] xs:text-[2.7rem]  sm:text-[2rem] md:text-[2.7rem] xm:text-[3rem] lg:text-[3.4rem] xl:text-[4rem] ">
+        <h1 className="font-bold text-[2rem] xs:text-[2.7rem] mt-[2rem]  sm:text-[2rem] md:text-[2.7rem] xm:text-[3rem] lg:text-[3.4rem] xl:text-[4rem] ">
           Passionate <br /> about <br />{' '}
           <span className="text-primary-2">Real Estate ?</span>
         </h1>

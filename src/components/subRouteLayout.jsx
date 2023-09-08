@@ -9,7 +9,7 @@ export const SubRouteLayout = ({ children, title, bgUrl }) => {
         style={{
           backgroundImage: `url(${bgUrl.src})`,
           width: '100%',
-          height: '100vh',
+          height: '75vh',
         }}
         className="px-20 pt-36 pb-20 w-full border BgImage"
       >
