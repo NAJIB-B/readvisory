@@ -1,5 +1,8 @@
 import './globals.css';
 import { Poppins } from 'next/font/google';
+
+import Script from 'next/script';
+
 import NavBar from '@/components/navBar/navbar';
 import { NavProvider } from '@/context/nav';
 
@@ -35,6 +38,25 @@ export default function RootLayout({ children }) {
           href="/favicon-16x16.png"
         ></link>
         <link rel="manifest" href="/site.webmanifest"></link>
+        {/* Google tag (gtag.js) */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_TAG}`}
+        ></Script>
+
+        <Script strategy="afterInteractive">
+          {`
+          
+           
+         
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            
+              gtag('config', ${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_TAG});
+            
+            `}
+        </Script>
       </head>
       <body className={inter.className}>
         <NavProvider>
