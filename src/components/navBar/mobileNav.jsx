@@ -1,7 +1,7 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 
 import { navLinks } from './navbar';
 import logo from '../../../public/images/logo.svg';
@@ -10,11 +10,6 @@ import menuIcon from '../../../public/images/menuIcon.svg';
 import Button from '../button/button';
 
 const MobileNav = () => {
-  const router = useRouter();
-  const gotoTalkToUs = () => {
-    toggleNav();
-    router.push('/talk-to-us');
-  };
   const [mobileNav, setMobileNav] = useState(false);
   const toggleNav = () => {
     setMobileNav(!mobileNav);
@@ -76,14 +71,15 @@ const MobileNav = () => {
                   </Link>
                 );
               })}
-              <Button
-                text={'Talk to us'}
-                textStyle={'text-primary-1 text-[1.5rem]'}
-                buttonStyle={
-                  'bg-primary-2 rounded-[4px] py-[0.5rem] px-[4rem] mt-4'
-                }
-                action={gotoTalkToUs}
-              ></Button>
+              <Link href={'/talk-to-us'}>
+                <Button
+                  text={'Talk to us'}
+                  textStyle={'text-primary-1 text-[1.5rem]'}
+                  buttonStyle={
+                    'bg-primary-2 rounded-[4px] py-[0.5rem] px-[4rem] mt-4'
+                  }
+                ></Button>
+              </Link>
             </div>
           </div>
         </div>

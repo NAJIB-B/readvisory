@@ -31,9 +31,7 @@ const TopSectionSlide = () => {
           modules={[Navigation, Keyboard]}
           navigation={true}
           loop={true}
-          autoplay={{
-            delay: 500,
-          }}
+          autoplay={true}
           keyboard={{ enabled: true, onlyInViewport: true }}
         >
           {slideImages.map((item, key) => {

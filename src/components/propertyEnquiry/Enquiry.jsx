@@ -1,17 +1,10 @@
-'use client';
-import { useEffect, useContext } from 'react';
 
-import { NavContext, navOptions } from '@/context/nav';
 import { Text } from '../Text';
 import { ContactUs } from './contact';
 import { Talk } from './talk';
 
 export const Enquiry = () => {
-  const { setActiveNav } = useContext(NavContext);
 
-  useEffect(() => {
-    setActiveNav(navOptions.talkToUs);
-  }, []);
   return (
     <>
       <div className="bg-light-cream p-14">

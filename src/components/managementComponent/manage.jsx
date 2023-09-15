@@ -1,19 +1,11 @@
-'use client';
 import Image from 'next/image';
-import { useEffect, useContext } from 'react';
 
-import { NavContext, navOptions } from '@/context/nav';
 import polygon from '../../../public/images/managementPolygon.png';
 import greyPolygon from '../../../public/images/greyPolygon.png';
 import devPlaning from '../../../public/images/devPlaning.svg';
 import consrtFinance from '../../../public/images/consrtFinance.svg';
 
 export const ManagementComponent = () => {
-  const { setActiveNav } = useContext(NavContext);
-
-  useEffect(() => {
-    setActiveNav(navOptions.management);
-  }, []);
   return (
     <>
       <div className="bg-primary-3 py-[4rem] px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl">
@@ -23,7 +15,7 @@ export const ManagementComponent = () => {
               <h2 className="font-bold text-secondary-10 pb-4 text-[1.5rem] sm:text-[2rem] ">
                 Asset Management/Agency
               </h2>
-              <p className="text-secondary-8 ">
+              <p className="text-secondary-8 md:text-[1.3rem]">
                 Asset management is about vision; the ability to see a
                 building’s potential, and to understand what’s needed to achieve
                 it. At R. E Advisory, we offer our clients a platform based on
@@ -54,7 +46,7 @@ export const ManagementComponent = () => {
               <h2 className="font-bold text-secondary-10 pb-4 text-[1.5rem] sm:text-[2rem]">
                 Facility Management
               </h2>
-              <p className="text-secondary-8 ">
+              <p className="text-secondary-8 md:text-[1.3rem]">
                 Buildings regardless of purpose or age require care and
                 attention. We provide a wide arrange of facility management
                 services, targeted at maintaining the integrity, comfort and

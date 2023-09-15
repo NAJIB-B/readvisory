@@ -1,4 +1,3 @@
-'use client';
 import Image from 'next/legacy/image';
 import BgUrl from '../../public/images/unsplash_RFDP7_80v5A.png';
 import call from '../../public/images/Phone Calling Rounded.png';
@@ -18,7 +17,10 @@ export const Footer = ({ paddingTop = '3.5rem' }) => {
       <div className="grid grid-flow-row-dense lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 gap-4 mb-8">
         <div className="col-span-2">
           <div
-            style={{ backgroundImage: `url("${BgUrl.src}")` }}
+            style={{
+              backgroundImage: `url("${BgUrl.src}")`,
+              backgroundSize: '55% 100%',
+            }}
             className="footer-img rounded-xl border-dark-moderate px-5 pt-12 h-full relative"
           >
             <div className="absolute w-2 link-icon h-2 mb-4">
@@ -40,11 +42,11 @@ export const Footer = ({ paddingTop = '3.5rem' }) => {
               />
             </div>
             <div className="xs:w-full sm:w-full md:w-2/3 lg:w-2/3 mb-5">
-              <span className="text-primary-2 text-4xl font-bold">
+              <span className="text-primary-2 text-4xl specialFooterLg:leading-[4.5rem] specialFooterLg:text-6xl font-bold">
                 Achieving
               </span>
               <br />
-              <span className="text-4xl font-bold text-white mb-5">
+              <span className="text-4xl font-bold specialFooterLg:leading-[4.5rem] specialFooterLg:text-6xl text-white mb-5">
                 your Real Estate
                 <span className=" text-primary-2 "> Goals</span>
               </span>
@@ -74,7 +76,7 @@ export const Footer = ({ paddingTop = '3.5rem' }) => {
               const { icon, text } = info;
               return (
                 <div key={index} className="flex items-center mb-6">
-                  <div className="me-2 relative w-4 h-4">
+                  <div className="me-2 relative w-4 h-4 specialFooterLg:w-8 specialFooterLg:h-8">
                     <Image
                       src={icon}
                       alt="object not found"
@@ -84,7 +86,10 @@ export const Footer = ({ paddingTop = '3.5rem' }) => {
                     />
                   </div>
                   <div>
-                    <Text style="text-xs c-gold" value={text} />
+                    <Text
+                      style="text-xs specialFooterLg:text-lg c-gold"
+                      value={text}
+                    />
                   </div>
                 </div>
               );

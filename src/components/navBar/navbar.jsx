@@ -1,10 +1,8 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import { useContext } from 'react';
+import { usePathname } from 'next/navigation';
 
-import { NavContext } from '@/context/nav';
 import logo from '../../../public/images/logo.svg';
 import searchIcon from '../../../public/images/Search.svg';
 import Button from '../button/button';
@@ -30,16 +28,11 @@ export const navLinks = [
 ];
 
 const NavBar = () => {
-  const router = useRouter();
-  const { activeNav, setActiveNav } = useContext(NavContext);
+  const pathname = usePathname();
 
-  const gotoTalkToUs = () => {
-    router.push('/talk-to-us');
-    setActiveNav(navOptions.talkToUs);
-  };
   return (
     <>
-      <div className="md:hidden w-full   absolute">
+      <div className="md:hidden w-full   absolute z-30">
         <MobileNav></MobileNav>
       </div>
       <div className="hidden md:block w-full   absolute">
@@ -66,9 +59,8 @@ const NavBar = () => {
                 <Link
                   href={link.link}
                   key={key}
-                  onClick={() => setActiveNav(link.name)}
                   className={`${
-                    activeNav == link.name ? 'text-primary-2' : 'text-white'
+                    pathname == link.link ? 'text-primary-2' : 'text-white'
                   } font-semibold text-[0.8rem] lg:text-[1rem]`}
                 >
                   {link.name}
@@ -76,7 +68,7 @@ const NavBar = () => {
               );
             })}
             {/* display search icon with different sizes based on screen size */}
-            <span className="hidden lg:block">
+            {/* <span className="hidden lg:block">
               <Image
                 src={searchIcon}
                 alt="search icon"
@@ -91,15 +83,16 @@ const NavBar = () => {
                 width={16}
                 height={16}
               ></Image>
-            </span>
-            <Button
-              text={'Talk to us'}
-              textStyle={'text-primary-1 text-[0.8rem] lg:text-[1rem]'}
-              buttonStyle={
-                'bg-primary-2 rounded-[4px] py-[0.4rem] px-[0.8rem] lg:py-[0.5rem] lg:px-[1.25rem]'
-              }
-              action={gotoTalkToUs}
-            ></Button>
+            </span> */}
+            <Link href={'/talk-to-us'}>
+              <Button
+                text={'Talk to us'}
+                textStyle={'text-primary-1 text-[0.8rem] lg:text-[1rem]'}
+                buttonStyle={
+                  'bg-primary-2 rounded-[4px] py-[0.4rem] px-[0.8rem] lg:py-[0.5rem] lg:px-[1.25rem]'
+                }
+              ></Button>
+            </Link>
           </div>
         </div>
         {/* <hr className="  w-full" /> */}

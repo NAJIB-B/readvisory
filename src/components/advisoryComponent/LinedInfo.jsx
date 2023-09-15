@@ -1,5 +1,3 @@
-'use client';
-
 import { Text } from '../Text';
 
 export const LinedInfo = ({ num, title, info }) => {

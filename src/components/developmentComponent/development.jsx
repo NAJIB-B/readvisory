@@ -1,8 +1,5 @@
-'use client';
 import Image from 'next/image';
-import { useEffect, useContext } from 'react';
 
-import { NavContext, navOptions } from '@/context/nav';
 import topBg from '../../../public/images/devSecondBg.svg';
 import devPlaning from '../../../public/images/devPlaning.svg';
 import consrtFinace from '../../../public/images/consrtFinance.svg';
@@ -10,15 +7,10 @@ import devRenovation from '../../../public/images/devRenovation.svg';
 import devProjectPlaning from '../../../public/images/devProjectPlaning.svg';
 
 const Development = () => {
-  const { setActiveNav } = useContext(NavContext);
-
-  useEffect(() => {
-    setActiveNav(navOptions.development);
-  }, []);
   return (
     <div>
       <div className="bg-primary-3 ">
-        <h2 className="font-bold text-secondary-10 mx-auto text-center pb-4 md:py-[5rem] text-[2rem] md:w-[50%]">
+        <h2 className="md:translate-y-[6rem] py-4 font-bold text-secondary-10 mx-auto text-center pb-4 md:py-[5rem] text-[2rem] md:w-[50%]">
           We offer
           <span className="text-primary-2"> residential </span>
           and
@@ -38,7 +30,7 @@ const Development = () => {
               <h2 className="font-bold text-white pb-4 text-[2rem] ">
                 Development Planning
               </h2>
-              <p className="text-secondary-12 ">
+              <p className="text-secondary-12 md:text-[1.3rem]">
                 We prepare a cohesive strategy encompassing; drawings and
                 documentation, feasibility, viability, and environmental impact
                 studies, regulatory interactions and building permits/approvals
@@ -67,7 +59,7 @@ const Development = () => {
               <h2 className="font-bold text-white pb-4 text-[2rem]">
                 Construction Finance
               </h2>
-              <p className="text-secondary-12 ">
+              <p className="text-secondary-12 md:text-[1.3rem]">
                 We understand the unique need for liquidity in real estate
                 projects, therefore we seek out sustainable structured finance
                 opportunities to ensure adequate liquidity during the lifespan
@@ -80,10 +72,10 @@ const Development = () => {
       <div className="bg-secondary-11 pb-[4rem] px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl">
         <div className="flex flex-col md:flex-row bg-secondary-10 mb-[4rem]">
           <div className="md:flex-[50%] p-[2rem]">
-            <h5 className="font-bold md:text-[1.5rem] text-primary-2">
+            <h5 className="font-bold md:text-[2rem] text-primary-2">
               Renovation:
             </h5>
-            <p className="font-medium text-white text-[0.8rem] md:text-[1.2rem]">
+            <p className="font-medium text-white text-[0.8rem] md:text-[1.5rem]">
               We plan and execute comprehensive property renovation and
               modernisation projects, including occupant management as well as
               targeted Facility Management services, to minimise disruptions to
@@ -108,10 +100,10 @@ const Development = () => {
             ></Image>
           </div>
           <div className="md:flex-[50%] p-[2rem]">
-            <h5 className="font-bold md:text-[1.5rem] text-primary-2">
+            <h5 className="font-bold md:text-[2rem] text-primary-2">
               Project Management:
             </h5>
-            <p className="font-medium text-white text-[0.8rem] md:text-[1.2rem]">
+            <p className="font-medium text-white text-[0.8rem] md:text-[1.5rem]">
               We provide a hands-on resource to guides clients from conception
               to completion stage, monitoring project timelines, resources, and
               milestones, with an strong eye on timelines and budget.

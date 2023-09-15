@@ -1,81 +1,60 @@
-import Image from 'next/image';
-
 import advisoryIcon from '../../../public/images/advisoryLp.svg';
-import skewedArrow from '../../../public/images/skewedArrow.svg';
 import developmentIcon from '../../../public/images/developmentLp.svg';
 import managementIcon from '../../../public/images/managementLp.svg';
+import lightAdvisoryIcon from '../../../public/images/lightAdvisoryLp.svg';
+import lightDevelopmentIcon from '../../../public/images/lightDevelopmentLp.svg';
+import lightManagementIcon from '../../../public/images/lightManagementLp.svg';
+import WhatWeDoCard from './whatWeDoCard';
 
 const WhatWeDo = () => {
   return (
     <div className="bg-white py-[4rem] px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl">
       <div className="text-center pb-[2rem]">
         <h2 className="font-bold text-primary-1 text-[2rem]">what we do:</h2>
-        <h2 className="font-bold text-primary-2 text-[3rem]">SUPPORT</h2>
 
         <p className="text-secondary-8  md:w-[45%] py-4 mx-auto">
-          Real Estate can be a complex journey, we support our clients through
+          Real Estate can be a complex journey, we{' '}
+          <span className="text-primary-2"> support</span> our clients through
           the process by providing strategic advise aimed at maximizing value
         </p>
       </div>
       <div className="flex flex-col gap-4 justify-between md:flex-row">
-        <div className="bg-primary-1 relative pt-[4.5rem] md:w-[33%] p-4 text-center rounded-[1.43rem]">
-          <Image
-            className="absolute top-6 right-6"
-            src={skewedArrow}
-            alt="skewed arrow"
-            width={15}
-          ></Image>
-          <Image
-            src={advisoryIcon}
-            alt="advisory icon"
-            className="mx-auto py-2"
-            width={80}
-          ></Image>
-          <h2 className="text-primary-3 font-bold text-[1.5rem]">Advisory</h2>
-          <p className="text-secondary-9 mx-auto md:w-[90%] py-2 leading-[2rem]">
-            Investments, Acquisitions, Financing, Reviews, Transfers & Estate
-            Planning
-          </p>
-        </div>
-        <div className="bg-primary-1 relative pt-[4.5rem] md:w-[33%] p-4 text-center rounded-[1.43rem]">
-          <Image
-            className="absolute top-6 right-6"
-            src={skewedArrow}
-            alt="skewed arrow"
-            width={15}
-          ></Image>
-          <Image
-            src={developmentIcon}
-            alt="advisory icon"
-            className="mx-auto py-2"
-            width={80}
-          ></Image>
-          <h2 className="text-primary-3 font-bold text-[1.5rem]">
-            Development
-          </h2>
-          <p className="text-secondary-9 mx-auto md:w-[90%] py-2 leading-[2rem]">
-            Property Development, Development Planning, Renovations & Project
-            Management
-          </p>
-        </div>
-        <div className="bg-primary-1 relative pt-[4.5rem] md:w-[33%] p-4 text-center rounded-[1.43rem]">
-          <Image
-            className="absolute top-6 right-6"
-            src={skewedArrow}
-            alt="skewed arrow"
-            width={15}
-          ></Image>
-          <Image
-            src={managementIcon}
-            alt="advisory icon"
-            className="mx-auto py-2"
-            width={80}
-          ></Image>
-          <h2 className="text-primary-3 font-bold text-[1.5rem]">Management</h2>
-          <p className="text-secondary-9 mx-auto md:w-[90%] py-2 leading-[2rem]">
-            Facility Management, Agency, Tenancy & Lease Management
-          </p>
-        </div>
+        {[
+          {
+            icon: advisoryIcon,
+            lightIcon: lightAdvisoryIcon,
+            iconAlt: 'advisory icon',
+            heading: 'Advisory',
+            content:
+              ' Investments, Acquisitions, Financing, Reviews, Transfers & Estate Planning',
+          },
+          {
+            icon: developmentIcon,
+            lightIcon: lightDevelopmentIcon,
+            iconAlt: 'development icon',
+            heading: 'Development',
+            content:
+              '  Property Development, Development Planning, Renovations & Project Management',
+          },
+          {
+            icon: managementIcon,
+            lightIcon: lightManagementIcon,
+            iconAlt: 'management icon',
+            heading: 'Management',
+            content: ' Facility Management, Agency, Tenancy & Lease Management',
+          },
+        ].map((item, key) => {
+          return (
+            <WhatWeDoCard
+              key={key}
+              icon={item.icon}
+              lightIcon={item.lightIcon}
+              iconAlt={item.iconAlt}
+              heading={item.heading}
+              content={item.content}
+            ></WhatWeDoCard>
+          );
+        })}
       </div>
     </div>
   );

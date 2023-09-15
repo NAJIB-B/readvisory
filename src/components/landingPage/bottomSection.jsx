@@ -1,5 +1,4 @@
-'use client';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import Image from 'next/image';
 
 import Button from '../button/button';
@@ -79,10 +78,6 @@ const slides = [
   },
 ];
 const BottomSection = () => {
-  const router = useRouter();
-  const gotoTalkToUs = () => {
-    router.push('/talk-to-us');
-  };
   return (
     <>
       <div className="bg-white  pt-[4rem] px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl">
@@ -104,17 +99,18 @@ const BottomSection = () => {
               Make your estate dreams a{' '}
               <span className="text-primary-2">reality </span>
             </h2>
-            <Button
-              text={'Talk to us'}
-              textStyle={'text-white text-[1rem]'}
-              buttonStyle={
-                'bg-secondary-10 sm:bg-secondary-3 sm:mx-1 border border-primary-2  sm:mb-8 rounded-[4px]  py-[0.4rem] px-[0.8rem] lg:py-[0.5rem] lg:px-[1.25rem]'
-              }
-              iconWidth={10}
-              iconHeight={10}
-              icon={skewedArrow}
-              action={gotoTalkToUs}
-            ></Button>
+            <Link href={'/talk-to-us'}>
+              <Button
+                text={'Talk to us'}
+                textStyle={'text-white text-[1rem]'}
+                buttonStyle={
+                  'bg-secondary-10 sm:bg-secondary-3 sm:mx-1 border border-primary-2  sm:mb-8 rounded-[4px]  py-[0.4rem] px-[0.8rem] lg:py-[0.5rem] lg:px-[1.25rem]'
+                }
+                iconWidth={10}
+                iconHeight={10}
+                icon={skewedArrow}
+              ></Button>
+            </Link>
           </div>
           <Image
             src={backgroundImage}

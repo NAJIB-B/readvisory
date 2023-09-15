@@ -13,6 +13,7 @@ module.exports = {
       md: '768px',
       xm: '900px',
       lg: '1024px',
+      specialFooterLg: '1088px',
       xl: '1280px',
     },
     extend: {

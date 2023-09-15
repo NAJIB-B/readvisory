@@ -1,11 +1,6 @@
-'use client';
-
-import { useEffect, useContext } from 'react';
 import Image from 'next/legacy/image';
 
 import { Text } from '../Text';
-import { navOptions } from '@/context/nav';
-import { NavContext } from '@/context/nav';
 import { LinedInfo } from './LinedInfo';
 import plan from '../../../public/images/Group 80401.png';
 import nego from '../../../public/images/Group 80394.png';
@@ -13,20 +8,14 @@ import perf from '../../../public/images/Group 80396.png';
 import frame from '../../../public/images/Frame 1311.png';
 
 export const Acquisition = () => {
-  const { setActiveNav } = useContext(NavContext);
-
-  useEffect(() => {
-    setActiveNav(navOptions.advisory);
-  }, []);
-
   return (
-    <div>
-      <div className="py-20 bg-light-cream">
+    <div className=" ">
+      <div className="py-20 bg-light-cream px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl">
         <Text
           value="ACQUISITION, INVESTMENT & REVIEWS"
           style="text-center font-semibold text-2xl mb-6 mx-3"
         />
-        <div className="flex flex-wrap justify-between mb-8 px-14">
+        <div className="flex flex-wrap justify-between mb-8 ">
           <div className="p-8 md:w-1/2 xl:w-1/2  sm:w-full xs:w-full xxs:w-full bg-light-grey xl:rounded-l-xl md:rounded-l-xl xl:rounded-l-xl xl:rounded-tr-none md:rounded-tr-none xl:rounded-tr-none sm:rounded-t-xl xs:rounded-t-xl xxs:rounded-t-xl">
             <LinedInfo
               num={1}
@@ -93,7 +82,7 @@ export const Acquisition = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap justify-between px-14 m-auto mb-10">
+        <div className="flex flex-wrap justify-between px-7 m-auto mb-10">
           {[
             {
               num: 2,
@@ -128,23 +117,22 @@ export const Acquisition = () => {
           })}
         </div>
       </div>
-      <div className="flex flex-wrap justify-between px-14 py-20 bg-dark-moderate m-1-">
+      <div className="flex flex-wrap justify-between px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl py-20 bg-dark-moderate m-1-">
         <div className="xl:w-1/2 xl:w-1/2 md:w-1/2 sm:w-full xs:w-full mb-2">
           <Text
             style="text-4xl font-bold xs:w-full sm:w-full md:w-3/4 xl:w-3/4 c-gold mb-5"
-            value="Asset Transfer/
-                            Estate Planning"
+            value="Asset Transfer"
           />
           <Text
             style="text-2xl text-white font-bold mb-3"
             value="Sale Coordination"
           />
           <Text
-            style="text-[1.2rem] font-semibold text-white mb-2"
+            style="text-[1.2rem]  font-semibold text-white mb-2"
             value="Looking to sell a property?"
           />
           <Text
-            style="text-[1rem] leading-5 c-top-black xl:w-1/2 xl:w-1/2 md:w-1/2 sm:w-full xs:w-full mb-4"
+            style="text-[1rem] leading-7 c-top-black  md:w-3/4 sm:w-full xs:w-full mb-4"
             value="We organise sales of single properties or portfolios of properties, our services also include guidance on sale and leaseback, due- diligence and suitable agency arrangements."
           />
           <Text
@@ -152,11 +140,11 @@ export const Acquisition = () => {
             value="Estate Planning"
           />
           <Text
-            style="text-[1rem] leading-5 c-top-black xl:w-1/2 xl:w-1/2 md:w-1/2 sm:w-full xs:w-full mb-4"
+            style="text-[1rem]  leading-7 c-top-black md:w-3/4 sm:w-full xs:w-full mb-4"
             value="Real estate investment can continue to yield results long after the lifetime of the initial investor, therefore they are very popular generational gifts. At R.E Advisory, we guide clients through the legal and regulatory framework and provide a platform for the safe transfer of these gift as intended."
           />
         </div>
-        <div className="xl:w-1/2 xl:w-1/2 md:w-1/2 sm:w-full xs:w-full xxs:w-full relative sm:h-96 xxs:h-96 xs:h-96 md:h-auto xl:h-auto xl:h-auto">
+        <div className="xl:w-1/2  md:w-1/2 sm:w-full xs:w-full xxs:w-full relative sm:h-96 xxs:h-96 xs:h-96 md:h-auto xl:h-auto xl:h-auto">
           <Image
             src={frame}
             alt="object not found"

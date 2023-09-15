@@ -1,4 +1,3 @@
-'use client';
 import Image from 'next/legacy/image';
 import { Text } from '../Text';
 import call from '../../../public/images/yellowphone.png';
