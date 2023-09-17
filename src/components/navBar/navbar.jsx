@@ -68,7 +68,7 @@ const NavBar = () => {
               );
             })}
             {/* display search icon with different sizes based on screen size */}
-            {/* <span className="hidden lg:block">
+            <span className="hidden lg:block">
               <Image
                 src={searchIcon}
                 alt="search icon"
@@ -83,7 +83,7 @@ const NavBar = () => {
                 width={16}
                 height={16}
               ></Image>
-            </span> */}
+            </span>
             <Link href={'/talk-to-us'}>
               <Button
                 text={'Talk to us'}
