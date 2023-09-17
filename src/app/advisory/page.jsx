@@ -8,6 +8,13 @@ export const metadata = {
   title: 'Property advise, asset transfer property management | Advisory',
   description:
     'Independent property firm, offering real estate investment, finance, development and management services',
+  robots: 'all',
+  icons: {
+    other: {
+      rel: 'canonical',
+      url: 'https://www.readvisory.ng/advisory',
+    },
+  },
 };
 
 export default function Advisory() {

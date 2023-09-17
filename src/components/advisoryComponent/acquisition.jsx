@@ -11,10 +11,9 @@ export const Acquisition = () => {
   return (
     <div className=" ">
       <div className="py-20 bg-light-cream px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl">
-        <Text
-          value="ACQUISITION, INVESTMENT & REVIEWS"
-          style="text-center font-semibold text-2xl mb-6 mx-3"
-        />
+        <h1 className="text-center font-semibold text-2xl mb-6 mx-3">
+          ACQUISITION, INVESTMENT & REVIEWS
+        </h1>
         <div className="flex flex-wrap justify-between mb-8 ">
           <div className="p-8 md:w-1/2 xl:w-1/2  sm:w-full xs:w-full xxs:w-full bg-light-grey xl:rounded-l-xl md:rounded-l-xl xl:rounded-l-xl xl:rounded-tr-none md:rounded-tr-none xl:rounded-tr-none sm:rounded-t-xl xs:rounded-t-xl xxs:rounded-t-xl">
             <LinedInfo
