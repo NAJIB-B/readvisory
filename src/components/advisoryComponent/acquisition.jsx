@@ -85,8 +85,8 @@ export const Acquisition = () => {
           {[
             {
               num: 2,
-              title: 'Mortgage/Property Financing',
-              text: 'We review available options and provideb independent advice on sustainable financing opportunities.',
+              title: 'Mortgage & Property Financing',
+              text: 'We review available options and provide independent advice on sustainable financing opportunities.',
             },
             {
               num: 3,
@@ -134,6 +134,7 @@ export const Acquisition = () => {
             style="text-[1rem] leading-7 c-top-black  md:w-3/4 sm:w-full xs:w-full mb-4"
             value="We organise sales of single properties or portfolios of properties, our services also include guidance on sale and leaseback, due- diligence and suitable agency arrangements."
           />
+          <hr className="h-[2px] w-[90%]  bg-primary-2 mb-6" />
           <Text
             style="text-white text-[1.2rem] font-bold mb-2"
             value="Estate Planning"

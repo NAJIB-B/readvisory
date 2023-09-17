@@ -13,10 +13,10 @@ const MissionAndVision = () => {
               Our Mission
             </h2>
             <p className="text-secondary-2 md:text-right">
-              In a span of ten years, our goal is to cut the housing shortage by
-              10%, fueling Real Estate Sector growth through expert,
-              forward-looking services rooted in genuine enthusiasm and strong
-              industry expertise.
+              Our mission is to reduce the housing deficit by 5% over the next
+              decade, fueling real estate sector contribution to overall GDP
+              growth by providing Professional, forward-looking services rooted
+              in genuine enthusiasm and strong industry expertise.
             </p>
           </div>
         </div>
@@ -42,10 +42,9 @@ const MissionAndVision = () => {
               Our Vision
             </h2>
             <p className="text-secondary-2 ">
-              We aim to become the top solutions provider in West and Central
-              Africa's Real Estate, delivering leading industry Advisory,
-              Development, and Management Services with a focus on people's
-              needs.
+              To be the leading Real Estate solutions provider across West and
+              Central Africa, delivering industry leading Advisory, Development,
+              and Management Services with a focus on maximinzing value.
             </p>
           </div>
         </div>

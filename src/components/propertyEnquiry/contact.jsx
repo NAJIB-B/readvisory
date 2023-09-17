@@ -11,10 +11,13 @@ import { WhiteForm } from './whiteForm';
 export const ContactUs = () => {
   return (
     <div className="bg-dark-moderate py-12 px-6">
-      <Text
-        style="c-gold text-4xl text-center font-extrabold mb-4"
-        value="Contact Us"
-      />
+      <h2
+        id="contact-us"
+        className="c-gold text-4xl text-center font-extrabold mb-4"
+      >
+        Contact Us
+      </h2>
+
       <Text
         style="text-md text-center mb-6 c-deep-black mb-2 font-bold"
         value="Any question or remarks? Just write us a message!"

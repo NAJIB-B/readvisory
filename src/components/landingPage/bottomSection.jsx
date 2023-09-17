@@ -11,7 +11,6 @@ import backgroundImage from '../../../public/images/layerBeforeFooter.png';
 
 const slides = [
   {
-    image: profileImage,
     name: 'Albert Flores',
     testimony: ` We stayed at Keji’s place for 4 days last week and were blown away
         by the experience, from the inception to the after care
@@ -22,7 +21,6 @@ const slides = [
     uncheckedStar,
   },
   {
-    image: profileImage,
     name: 'Albert Flores',
     testimony: ` We stayed at Keji’s place for 4 days last week and were blown away
         by the experience, from the inception to the after care
@@ -33,40 +31,6 @@ const slides = [
     uncheckedStar,
   },
   {
-    image: profileImage,
-    name: 'Albert Flores',
-    testimony: ` We stayed at Keji’s place for 4 days last week and were blown away
-        by the experience, from the inception to the after care
-        experience.The pictures that advertise the property don’t do it
-        justice; the home is tastefully furnished with all your mod cons and
-        then more`,
-    checkedStar,
-    uncheckedStar,
-  },
-  {
-    image: profileImage,
-    name: 'Albert Flores',
-    testimony: ` We stayed at Keji’s place for 4 days last week and were blown away
-        by the experience, from the inception to the after care
-        experience.The pictures that advertise the property don’t do it
-        justice; the home is tastefully furnished with all your mod cons and
-        then more`,
-    checkedStar,
-    uncheckedStar,
-  },
-  {
-    image: profileImage,
-    name: 'Albert Flores',
-    testimony: ` We stayed at Keji’s place for 4 days last week and were blown away
-        by the experience, from the inception to the after care
-        experience.The pictures that advertise the property don’t do it
-        justice; the home is tastefully furnished with all your mod cons and
-        then more`,
-    checkedStar,
-    uncheckedStar,
-  },
-  {
-    image: profileImage,
     name: 'Albert Flores',
     testimony: ` We stayed at Keji’s place for 4 days last week and were blown away
         by the experience, from the inception to the after care

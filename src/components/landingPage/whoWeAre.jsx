@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Link from 'next/link';
 
 import Button from '../button/button';
 import TopSectionSlide from './topSectionSlide';
@@ -15,16 +15,18 @@ const WhoWeAre = () => {
             with a <strong>shared passion </strong>
             for real estate
           </p>
-          <Button
-            text={'Learn more'}
-            textStyle={'text-white text-[1rem]'}
-            buttonStyle={
-              'bg-primary-1 mx-auto rounded-[4px] mb-8 py-[0.4rem] px-[0.8rem] lg:py-[0.5rem] lg:px-[1.25rem]'
-            }
-            iconWidth={10}
-            iconHeight={10}
-            icon={skewedArrow}
-          ></Button>
+          <Link href={'/talk-to-us#contact-us'}>
+            <Button
+              text={'Learn more'}
+              textStyle={'text-white text-[1rem]'}
+              buttonStyle={
+                'bg-primary-1 mx-auto rounded-[4px] mb-8 py-[0.4rem] px-[0.8rem] lg:py-[0.5rem] lg:px-[1.25rem]'
+              }
+              iconWidth={10}
+              iconHeight={10}
+              icon={skewedArrow}
+            ></Button>
+          </Link>
         </div>
 
         <TopSectionSlide></TopSectionSlide>

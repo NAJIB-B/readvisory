@@ -14,8 +14,12 @@ const WhatWeDo = () => {
 
         <p className="text-secondary-8  md:w-[45%] py-4 mx-auto">
           Real Estate can be a complex journey, we{' '}
-          <span className="text-primary-2"> support</span> our clients through
-          the process by providing strategic advise aimed at maximizing value
+          <span className="text-primary-2 font-black text-[1.1rem]">
+            {' '}
+            support
+          </span>{' '}
+          our clients through the process by providing strategic advise aimed at
+          maximizing value
         </p>
       </div>
       <div className="flex flex-col gap-4 justify-between md:flex-row">
@@ -25,6 +29,7 @@ const WhatWeDo = () => {
             lightIcon: lightAdvisoryIcon,
             iconAlt: 'advisory icon',
             heading: 'Advisory',
+            link: '/advisory',
             content:
               ' Investments, Acquisitions, Financing, Reviews, Transfers & Estate Planning',
           },
@@ -33,6 +38,8 @@ const WhatWeDo = () => {
             lightIcon: lightDevelopmentIcon,
             iconAlt: 'development icon',
             heading: 'Development',
+            link: '/development',
+
             content:
               '  Property Development, Development Planning, Renovations & Project Management',
           },
@@ -41,6 +48,7 @@ const WhatWeDo = () => {
             lightIcon: lightManagementIcon,
             iconAlt: 'management icon',
             heading: 'Management',
+            link: '/management',
             content: ' Facility Management, Agency, Tenancy & Lease Management',
           },
         ].map((item, key) => {
@@ -51,6 +59,7 @@ const WhatWeDo = () => {
               lightIcon={item.lightIcon}
               iconAlt={item.iconAlt}
               heading={item.heading}
+              link={item.link}
               content={item.content}
             ></WhatWeDoCard>
           );

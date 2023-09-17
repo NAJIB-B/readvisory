@@ -54,11 +54,7 @@ const SliderWithPreview = ({ slides }) => {
                     isActive ? 'scale-[1]' : 'scale-[0.8]'
                   } border border-primary-2  shadow-devPage rounded-lg py-[2rem] bg-primary-3 text-center px-2 sm:mx-2`}
                 >
-                  <Image
-                    src={slide.image}
-                    alt="profile image"
-                    className="mx-auto pb-4"
-                  ></Image>
+
                   <p className="font-semibold text-[13px] p-1">{slide.name}</p>
                   <div className="flex flex-row justify-center p-1">
                     <Image src={slide.checkedStar} alt="checked star"></Image>
