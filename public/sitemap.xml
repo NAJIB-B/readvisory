@@ -1,40 +1,39 @@
-  <xml version="1.0" encoding="UTF-8">
-   
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Homepage -->
-  <url>
-    <loc>https://www.readvisory.ng/</loc>
-    <lastmod>2023-09-17</lastmod>
-   
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
 
-  <!-- Advisory Page -->
-  <url>
-    <loc>https://www.readvisory.ng/advisory</loc>
-    <lastmod>2023-09-17</lastmod>
-  
-  </url>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Management Page -->
-  <url>
-    <loc>https://www.readvisory.ng/management</loc>
-    <lastmod>2023-09-17</lastmod>
+        <url>
+            <loc>https://www.readvisory.ng/</loc>
+            <lastmod>2023-09-17</lastmod>
 
-  </url>
+        </url>
 
-  <!-- Development Page -->
-  <url>
-    <loc>https://www.readvisory.ng/development</loc>
-    <lastmod>2023-09-17</lastmod>
 
-  </url>
+        <url>
+            <loc>https://www.readvisory.ng/advisory</loc>
+            <lastmod>2023-09-17</lastmod>
 
-  <!-- Contact Page -->
-  <url>
-    <loc>https://www.readvisory.ng/talk-to-us</loc>
-    <lastmod>2023-09-17</lastmod>
+        </url>
 
-  </url>
-</urlset>
+
+        <url>
+            <loc>https://www.readvisory.ng/management</loc>
+            <lastmod>2023-09-17</lastmod>
+
+        </url>
+
+
+        <url>
+            <loc>https://www.readvisory.ng/development</loc>
+            <lastmod>2023-09-17</lastmod>
+
+        </url>
+
+        <url>
+            <loc>https://www.readvisory.ng/talk-to-us</loc>
+            <lastmod>2023-09-17</lastmod>
+
+        </url>
+    </urlset>
 
 </xml>

@@ -8,7 +8,7 @@ import BottomSection from '@/components/landingPage/bottomSection';
 import { Footer } from '@/components/footer';
 
 export const metadata = {
-  title: 'Real estate investment | Readvisory.ng',
+  title: 'Real estate agency | Readvisory.ng',
   description:
     'Independent property firm, offering real estate investment, finance, development and management services',
   robots: 'all',
