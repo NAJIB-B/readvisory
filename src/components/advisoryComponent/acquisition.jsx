@@ -5,7 +5,7 @@ import { LinedInfo } from './LinedInfo';
 import plan from '../../../public/images/Group 80401.png';
 import nego from '../../../public/images/Group 80394.png';
 import perf from '../../../public/images/Group 80396.png';
-import frame from '../../../public/images/Frame 1311.png';
+import frame from '../../../public/images/Frame 1311.svg';
 
 export const Acquisition = () => {
   return (
