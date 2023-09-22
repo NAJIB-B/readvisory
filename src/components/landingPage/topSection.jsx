@@ -7,17 +7,10 @@ import Image from 'next/legacy/image';
 const TopSection = () => {
   return (
     <div
-<<<<<<< HEAD
       className={`flex flex-wrap justify-between items-center border items-start bg-primary-1 bg-bottom bg-contain sm:bg-right-bottom bg-no-repeat  pt-[4rem] pb-4 text-white  px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl`}
     >
       <div className=" sm:w-[100%] xs:w-[100%] xxs:w-[100%] md:w-[40%] xl:w-[40%] lg:w-[40%] ">
         <h1 className="font-bold text-[2rem] xs:text-[2.7rem] sm:mt-[2rem] xxxs:mt-[2rem] xxs:mt-[2rem] xs:mt-[2rem]   md:mt-[0] xm:mt-[0] lg:mt-[0] xl:mt-[0]  sm:text-[2rem] md:text-[2.7rem] xm:text-[3rem] lg:text-[3.4rem] xl:text-[4rem] ">
-=======
-      className={`flex flex-wrap justify-between items-center border bg-primary-1 bg-bottom bg-contain sm:bg-right-bottom bg-no-repeat  pt-[8rem] pb-4 text-white  px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl`}
-    >
-      <div className=" sm:w-full xs:w-full xxs:w-full md:w-[40%] xl:w-[40%] lg:w-[40%] ">
-        <h1 className="font-bold text-[2rem] xs:text-[2.7rem] mt-[2rem]  sm:text-[2rem] md:text-[2.7rem] xm:text-[3rem] lg:text-[3.4rem] xl:text-[4rem] ">
->>>>>>> 168796e5bc4ab48e346ab9966edcb1ad5780fdf9
           Passionate <br /> about <br />{' '}
           <span className="text-primary-2">Real Estate </span>
         </h1>
@@ -42,13 +35,8 @@ const TopSection = () => {
         </div>
         </div>
       </div>
-<<<<<<< HEAD
       <div className='flex flex-col items-center justify-center sm:h-[24rem] xs:h-[24rem] xxs:h-[24rem] xxxs:h-[24rem] md:h-screen xl:h-screen lg:h-screen sm:w-[100%] xs:w-[100%] xxs:w-[100%] xxxs:w-[100%] md:w-1/2 xl:w-1/2 lg:w-1/2'>
         <div className="relative w-[100%] h-[32rem] ">
-=======
-      <div className='flex flex-col items-center justify-center sm:h-[24rem] xs:h-[24rem] xxs:h-[24rem] xxxs:h-auto md:h-screen xl:h-screen lg:h-screen sm:w-full xs:w-full xxs:w-full md:w-1/2 xl:w-1/2 lg:w-1/2'>
-        <div className="relative w-full h-[32rem]">
->>>>>>> 168796e5bc4ab48e346ab9966edcb1ad5780fdf9
             <Image
               src={TopImg}
               alt="object not found"

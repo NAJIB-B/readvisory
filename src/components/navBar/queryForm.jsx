@@ -4,7 +4,6 @@ import { AiOutlineClockCircle } from "react-icons/ai";
 
 export const QueryForm =()=>{
     const [suggestion, setSuggestion] = useState([]);
-<<<<<<< HEAD
     const[active,setAcive] = useState({
         suggestIndex:0,
         formField:''
@@ -17,10 +16,6 @@ export const QueryForm =()=>{
                 formField:e.target.value
             }
         })
-=======
-    const allsg= ["How to become rich","How to become rich without working","How to become thin without working out","How to become beautifull without makeup"]
-    const handleChange =(e)=>{
->>>>>>> 168796e5bc4ab48e346ab9966edcb1ad5780fdf9
         if(e.target.value ==""){
             return setSuggestion(()=>[])
         }
@@ -32,11 +27,7 @@ export const QueryForm =()=>{
             <div className="relative mb-2 rounded flex w-full items-center justify-center w-full bg-white rounded-md p-2">
                 {/*search icon*/}
                 <span
-<<<<<<< HEAD
                     className="me-2 input-group-text flex items-center whitespace-nowrap rounded px-3 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
-=======
-                    className="me-4 input-group-text flex items-center whitespace-nowrap rounded px-3 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
->>>>>>> 168796e5bc4ab48e346ab9966edcb1ad5780fdf9
                     id="basic-addon2">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -57,16 +48,10 @@ export const QueryForm =()=>{
                         aria-label="Search"
                         onChange={handleChange}
                         aria-describedby="button-addon2"
-<<<<<<< HEAD
                         value={active.formField}
                     />
                     <button
                         className="relative z-[2] rounded-r text-dark px-3 py-2 text-xs font-medium uppercase transition duration-150 ease-in-out "
-=======
-                    />
-                    <button
-                        className="relative z-[2] rounded-r text-dark px-6 py-2 text-xs font-medium uppercase transition duration-150 ease-in-out "
->>>>>>> 168796e5bc4ab48e346ab9966edcb1ad5780fdf9
                         type="button"
                         id="button-addon2"
                         style={{
@@ -85,7 +70,6 @@ export const QueryForm =()=>{
                                 return(
                                     <div 
                                         key={index}
-<<<<<<< HEAD
                                         onClick={
                                             ()=>{
                                                 setAcive({
@@ -96,9 +80,6 @@ export const QueryForm =()=>{
                                             }
                                         }
                                         className={`${index == active.suggestIndex?"bg-gold text-white":null} p-3 mb-3 rounded-md flex flex-row align-items-center`}
-=======
-                                        className={`${index ==0?"bg-gold text-white":null} p-3 mb-3 rounded-md flex flex-row align-items-center`}
->>>>>>> 168796e5bc4ab48e346ab9966edcb1ad5780fdf9
                                     >
                                         <span className="me-2 text-dark">
                                             <AiOutlineClockCircle/>

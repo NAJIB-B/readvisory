@@ -7,10 +7,6 @@ import searchIcon from '../../../public/images/Search.svg';
 import Button from '../button/button';
 import MobileNav from './mobileNav';
 import { useRouter } from 'next/navigation';
-<<<<<<< HEAD
-=======
-import { QueryModal } from './queryModal';
->>>>>>> 168796e5bc4ab48e346ab9966edcb1ad5780fdf9
 
 export const navLinks = [
   {
@@ -122,7 +118,6 @@ const NavBar = () => {
         </div>
         {/* <hr className="  w-full" /> */}
       </div>
-      <QueryModal/>
     </>
   );
 };
