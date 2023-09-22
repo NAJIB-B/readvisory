@@ -48,7 +48,7 @@ export const Form =(e)=>{
                             amount:e.target.value
                             }
                         })}
-                        className="py-2 relative m-0 block w-full min-w-0 flex-auto rounded mortgauge-form text-xs  bg-clip-padding px-3 text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+                        className="py-2 relative m-0 block w-full min-w-0 flex-auto rounded mortgauge-form text-xs  bg-light-black px-3 text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
                         id="exampleSearch1"
                         placeholder="Loan Amount" 
                     />
@@ -64,7 +64,7 @@ export const Form =(e)=>{
                             }
                         })}
                         type="number"
-                        className="py-2 relative m-0 block w-full min-w-0 flex-auto rounded mortgauge-form text-xs bg-clip-padding px-3 text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+                        className="py-2 relative m-0 block w-full min-w-0 flex-auto rounded mortgauge-form text-xs bg-light-black px-3 text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
                         id="exampleSearch2"
                         placeholder="Repayment Period (years)" 
                     />
@@ -81,7 +81,7 @@ export const Form =(e)=>{
                             }
                         })}
                         name="amount"
-                        className="py-2 relative m-0 block w-full min-w-0 flex-auto rounded mortgauge-form text-xs bg-clip-padding px-3 text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+                        className="py-2 relative m-0 block w-full min-w-0 flex-auto rounded mortgauge-form text-xs bg-light-black px-3 text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
                         id="exampleSearch"
                         placeholder="Interest Rate (%)" 
                     />
@@ -126,7 +126,7 @@ export const Form =(e)=>{
             {
                 formInput.payment &&(
                     <div>
-                        <div className="p-4  rounded mortgauge-form xs:col-span-2 xxs:col-span-2 sm:col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1">
+                        <div className="p-4  rounded bg-light-black mortgauge-form xs:col-span-2 xxs:col-span-2 sm:col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1">
                             <Text   
                                 style="text-sm mb-2 c-gold"
                                 value="Your Monthly Repayments "
@@ -136,7 +136,7 @@ export const Form =(e)=>{
                                 value="NGN"
                             />
                             <Text   
-                                style="text-4xl mb-2 text-white font-semibold"
+                                style="text-3xl mb-2 text-white font-semibold break-words"
                                 value={formInput.payment}
                             />
                             <Text   
