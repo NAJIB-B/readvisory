@@ -41,7 +41,7 @@ const TopSection = () => {
               src={TopImg}
               alt="object not found"
               layout="fill"
-              objectFit="contain"
+              objectFit="cover"
               placeholder="blur"
             />
           </div>

@@ -30,14 +30,14 @@ export const Blog =()=>{
                     return(
                         <div 
                             key={index}
-                            className="mb-3 cursor"
+                            className="mb-4 cursor"
                         >
-                            <div className="relative w-full mb-2 h-[20rem]">
+                            <div className="relative w-full mb-4 h-[20rem]">
                                 <Image
                                     src={img}
                                     alt="object not found"
                                     layout="fill"
-                                    objectFit="contain"
+                                    objectFit="cover"
                                     placeholder="blur"
                                     className='rounded-lg w-full'
                                 />
