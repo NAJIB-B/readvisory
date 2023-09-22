@@ -25,7 +25,7 @@ export const QueryForm =()=>{
     return(
         <div className="flex flex-col items-center justify-center p-4">
             <div 
-                style={{zIndex:'100'}}
+                style={{zIndex:'100',marginTop:"6rem"}}
                 className="relative mb-2 rounded flex w-full items-center justify-center w-full bg-white rounded-md p-2">
                 {/*search icon*/}
                 <span
