@@ -7,7 +7,7 @@ import { Text } from '../Text';
 
 export const Blog =()=>{
     return(
-        <div className='py-[4rem] px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl grid xs:grid-cols-1 xxs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-14 '>
+        <div className='py-[4rem] px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl grid xs:grid-cols-1 xxs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-x-14 '>
             {
                 [
                     {
@@ -30,16 +30,16 @@ export const Blog =()=>{
                     return(
                         <div 
                             key={index}
-                            className="mb-0 cursor"
+                            className="mb-3 cursor"
                         >
-                            <div className="relative w-full h-[20rem]">
+                            <div className="relative w-full mb-2 h-[20rem]">
                                 <Image
                                     src={img}
                                     alt="object not found"
                                     layout="fill"
                                     objectFit="contain"
                                     placeholder="blur"
-                                    className='rounded-lg w-full h-[28rem]'
+                                    className='rounded-lg w-full'
                                 />
                             </div>
                             <div>

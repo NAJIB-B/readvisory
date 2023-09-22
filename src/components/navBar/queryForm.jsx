@@ -27,7 +27,7 @@ export const QueryForm =()=>{
             <div className="relative mb-2 rounded flex w-full items-center justify-center w-full bg-white rounded-md p-2">
                 {/*search icon*/}
                 <span
-                    className="me-4 input-group-text flex items-center whitespace-nowrap rounded px-3 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
+                    className="me-2 input-group-text flex items-center whitespace-nowrap rounded px-3 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
                     id="basic-addon2">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ export const QueryForm =()=>{
                         value={active.formField}
                     />
                     <button
-                        className="relative z-[2] rounded-r text-dark px-6 py-2 text-xs font-medium uppercase transition duration-150 ease-in-out "
+                        className="relative z-[2] rounded-r text-dark px-3 py-2 text-xs font-medium uppercase transition duration-150 ease-in-out "
                         type="button"
                         id="button-addon2"
                         style={{

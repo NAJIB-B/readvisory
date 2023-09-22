@@ -31,7 +31,14 @@ const MobileNav = () => {
           </p>
         </div>
         <div className="flex items-center gap-4 flex-row">
-          <span>
+          <span
+            className="lg:hidden"
+            type="button" 
+            data-te-toggle="modal"
+            data-te-target="#exampleModal"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+          >
             <Image
               src={searchIcon}
               alt="search icon"
