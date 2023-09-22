@@ -165,11 +165,14 @@
   background-size: contain;
   border: 2px solid #7676802B;
 }
+<<<<<<< HEAD
 @media (min-width: 320px){
 .landing-img{
     width: -webkit-fill-available!important;
 }
 }
+=======
+>>>>>>> 168796e5bc4ab48e346ab9966edcb1ad5780fdf9
 .mortgauge-form{
   background-color: #7676802B;
   border: 1px solid #7676802B;
