@@ -16,8 +16,17 @@
   }
 }
 
-body {
-
+.c-gold{
+  color:#CEA964;
+}
+.Border{
+  border-bottom: 10px solid #CEA964;
+  border-style: double;
+  padding: 2rem;
+  border-radius: 0px 0px 50px 50px;
+}
+.bg-gold{
+  background-color: #CEA964;
 }
 .swiper-pagination-bullet-active{
   background-color: #CEA964 !important;
@@ -74,7 +83,17 @@ body {
   grid-row-start:5;
   grid-row-end:7;
 }
-
+.doubleBorder{
+  border-radius: 0px, 240px, 240px;
+  border: 0px, 0px, 11px, 0px;
+  Opacity: 10%;
+  border-color: #CEA964;
+  border-style: double;
+}
+.morgauge-text{
+  color:#CEA964;
+  border-bottom: 1px solid #CEA964;
+}
 .devPageShadowRight{
   box-shadow: 15px 9px 0 0 rgb(25,25,25), 16px 10px 0 0 rgba(206,169,100,1);
 }
@@ -136,9 +155,7 @@ body {
 .c-top-black{
   color:#767676;
 }
-.c-gold{
-  color:#CEA964;
-}
+
 .bg-thindark-black{
   background-color:#222222;
 }
@@ -147,6 +164,10 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   border: 2px solid #7676802B;
+}
+.mortgauge-form{
+  background-color: #7676802B;
+  border: 1px solid #7676802B;
 }
 .mt-1-{
   margin-top: -0.1rem;

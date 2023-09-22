@@ -2,8 +2,9 @@ import './globals.css';
 import { Poppins } from 'next/font/google';
 
 import Script from 'next/script';
-
+import "tw-elements/dist/css/tw-elements.min.css";
 import NavBar from '@/components/navBar/navbar';
+import { QueryModal } from '@/components/navBar/queryModal';
 
 const inter = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -52,6 +53,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <NavBar></NavBar>
         {children}
+        <QueryModal/>
       </body>
     </html>
   );

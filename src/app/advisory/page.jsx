@@ -1,8 +1,7 @@
-import Head from 'next/head';
-
 import { SubRouteLayout } from '@/components/subRouteLayout';
 import Bgimage from '../../../public/images/and.png';
 import { Acquisition } from '@/components/advisoryComponent/acquisition';
+import { MortgaugeBody } from '@/components/advisoryComponent/moragugeBody';
 
 export const metadata = {
   title: 'Property advise, asset transfer property management | Advisory',
@@ -21,6 +20,7 @@ export default function Advisory() {
   return (
     <SubRouteLayout title="ADVISORY" bgUrl={Bgimage}>
       <Acquisition />
+      <MortgaugeBody/>
     </SubRouteLayout>
   );
 }
