@@ -5,7 +5,7 @@ import { LinedInfo } from './LinedInfo';
 import plan from '../../../public/images/Group 80401.png';
 import nego from '../../../public/images/Group 80394.png';
 import perf from '../../../public/images/Group 80396.png';
-import frame from '../../../public/images/Frame 1311.svg';
+import frame from '../../../public/images/image 17.png';
 
 export const Acquisition = () => {
   return (
@@ -85,32 +85,36 @@ export const Acquisition = () => {
           {[
             {
               num: 2,
+              morgauge:false,
               title: 'Mortgage & Property Financing',
               text: 'We review available options and provide independent advice on sustainable financing opportunities.',
             },
             {
               num: 3,
+              morgauge:true,
               title: 'Strategic Property Review',
               text: 'We can undertake a strategic review of client Real Estate assets alongside a comprehensive review of the market realities and propose a suitable asset utilization plan.',
             },
             {
               num: 4,
+              morgauge:false,
               title: 'Opinions of Value',
               text: 'We provide objective reports outlining current market realities in relation to a wide range of property types, for accounting, personal, acquisition or disposal purposes.',
             },
             {
               num: 5,
+              morgauge:false,
               title: 'Investment Advice',
               text: 'We find the right real estate investment opportunities and robustly manage these investments to deliver maximum returns for clients.',
             },
           ].map((info, index) => {
-            const { num, title, text } = info;
+            const { num, title, text, morgauge } = info;
             return (
               <div
                 className="xl:w-1/2 xl:w-1/2 md:w-1/2 sm:w-full xs:w-ful mb-6"
                 key={index}
               >
-                <LinedInfo num={num} title={title} info={text} />
+                <LinedInfo num={num} title={title} info={text} morgauge={ morgauge} />
               </div>
             );
           })}

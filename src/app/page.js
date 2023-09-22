@@ -1,11 +1,10 @@
-import Head from 'next/head';
-
 import TopSection from '@/components/landingPage/topSection';
 import WhoWeAre from '@/components/landingPage/whoWeAre';
 import WhatWeDo from '@/components/landingPage/whatWeDo';
 import MissionAndVision from '@/components/landingPage/missionAndVision';
 import BottomSection from '@/components/landingPage/bottomSection';
 import { Footer } from '@/components/footer';
+import { Blog } from '@/components/landingPage/blog';
 
 export const metadata = {
   title: 'Real estate agency | Readvisory.ng',
@@ -28,6 +27,7 @@ export default function Home() {
         <WhoWeAre></WhoWeAre>
         <WhatWeDo></WhatWeDo>
         <MissionAndVision></MissionAndVision>
+        <Blog/>
         <BottomSection></BottomSection>
         <Footer paddingTop={'12rem'}></Footer>
       </main>

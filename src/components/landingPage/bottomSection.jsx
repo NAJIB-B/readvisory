@@ -11,34 +11,25 @@ import backgroundImage from '../../../public/images/layerBeforeFooter.png';
 
 const slides = [
   {
-    name: 'Albert Flores',
-    testimony: ` We stayed at Keji’s place for 4 days last week and were blown away
-        by the experience, from the inception to the after care
-        experience.The pictures that advertise the property don’t do it
-        justice; the home is tastefully furnished with all your mod cons and
-        then more`,
+    name: 'Mr Ayo',
+    testimony: `In late 2022, we moved to Abuja for work with our two kids. R.E Advisory helped us find an affordable, serene home, handled negotiations, and arranged a comfortable mortgage. Their professionalism impressed us, and our kids love the new house. Highly recommend their services to future homeowners.`,
     checkedStar,
     uncheckedStar,
+    location:"Airport road abuja"
+  },
+  {
+    name: 'Akumast Nigeria Ltd.',
+    testimony: ` Over the last 4 years, our partnership has delivered 2 housing estate and over 200 units of 2 bedroom, 3 bedroom and 4 bedroom properties. They helped us secure funding for both projects and handled the administrative side of things with the bank which allowed to us focus of project delivery.`,
+    checkedStar,
+    uncheckedStar,
+    location:"Nkwelle, Anambra State"
   },
   {
     name: 'Albert Flores',
-    testimony: ` We stayed at Keji’s place for 4 days last week and were blown away
-        by the experience, from the inception to the after care
-        experience.The pictures that advertise the property don’t do it
-        justice; the home is tastefully furnished with all your mod cons and
-        then more`,
+    testimony: `In 2021, I hired R.E Advisory to invest in real estate, and they guided me to buy a 3-bedroom terrace house in Abuja's Life Camp area. They assisted with equity payments, NHF application, and now my property has appreciated by over 15%. Thanks to the team!`,
     checkedStar,
     uncheckedStar,
-  },
-  {
-    name: 'Albert Flores',
-    testimony: ` We stayed at Keji’s place for 4 days last week and were blown away
-        by the experience, from the inception to the after care
-        experience.The pictures that advertise the property don’t do it
-        justice; the home is tastefully furnished with all your mod cons and
-        then more`,
-    checkedStar,
-    uncheckedStar,
+    location:"Abuja"
   },
 ];
 const BottomSection = () => {
