@@ -17,7 +17,7 @@ export const QueryModal =()=>{
     return(
         <div
             data-te-modal-init
-            style={{background:"none",marginTop:"6rem",zIndex:"100"}}
+            style={{background:"none",marginTop:"6rem"}}
             className="fixed mt-8 left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
             id="exampleModal"
             tabIndex="-1"

@@ -24,7 +24,9 @@ export const QueryForm =()=>{
     }
     return(
         <div className="flex flex-col items-center justify-center p-4">
-            <div className="relative mb-2 rounded flex w-full items-center justify-center w-full bg-white rounded-md p-2">
+            <div 
+                style={{zIndex:'100'}}
+                className="relative mb-2 rounded flex w-full items-center justify-center w-full bg-white rounded-md p-2">
                 {/*search icon*/}
                 <span
                     className="me-2 input-group-text flex items-center whitespace-nowrap rounded px-3 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
