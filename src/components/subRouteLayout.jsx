@@ -22,7 +22,7 @@ export const SubRouteLayout = ({ children, title, bgUrl }) => {
               </h1>
             </div>
             <div className="adjWrapper">
-              <div className="relative w-full h-10">
+              <div className="relative w-full h-15">
                 <Image
                   src={shadow1}
                   alt="object not found"
@@ -31,7 +31,7 @@ export const SubRouteLayout = ({ children, title, bgUrl }) => {
                   placeholder="blur"
                 />
               </div>
-              <div  className="relative adjImg w-full h-10">
+              <div  className="relative adjImg w-full h-15">
                 <Image
                   src={shadow2}
                   alt="object not found"

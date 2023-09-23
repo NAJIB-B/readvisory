@@ -41,7 +41,10 @@
   background-image: url('https://i.ibb.co/WkwZZPz/Frame 80437.png');
 }
 .adjImg{
-  margin-top:-2rem;
+  margin-top:-2.5rem;
+}
+.h-15{
+  height: 3.5rem;
 }
 .adjWrapper{
   margin-top: -0.5rem;
