@@ -25,7 +25,7 @@ export const Acquisition = () => {
                             3 simple steps."
             />
           </div>
-          <div className="p-8 grid xs:grid-cols-1 xxs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-2 bg-dark-moderate md:w-1/2 xl:w-1/2 xl:w-1/2 sm:w-full xs:w-full xxs:w-full xl:rounded-r-xl md:rounded-r-xl sm:rounded-b-xl xs:rounded-b-xl xxs:rounded-b-xl xl:rounded-r-xl xl:rounded-bl-none md:rounded-bl-none xl:rounded-bl-none">
+          <div className="p-8 grid xs:grid-cols-1 xxs:grid-cols-1 xxxs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-2 bg-dark-moderate md:w-1/2 xl:w-1/2 xl:w-1/2 sm:w-full xs:w-full xxs:w-full xl:rounded-r-xl md:rounded-r-xl sm:rounded-b-xl xs:rounded-b-xl xxs:rounded-b-xl xl:rounded-r-xl xl:rounded-bl-none md:rounded-bl-none xl:rounded-bl-none">
             {[
               {
                 icon: plan,
@@ -85,13 +85,13 @@ export const Acquisition = () => {
           {[
             {
               num: 2,
-              morgauge:false,
+              morgauge:true,
               title: 'Mortgage & Property Financing',
               text: 'We review available options and provide independent advice on sustainable financing opportunities.',
             },
             {
               num: 3,
-              morgauge:true,
+              morgauge:false,
               title: 'Strategic Property Review',
               text: 'We can undertake a strategic review of client Real Estate assets alongside a comprehensive review of the market realities and propose a suitable asset utilization plan.',
             },
@@ -138,7 +138,7 @@ export const Acquisition = () => {
             style="text-[1rem] leading-7 c-top-black  md:w-3/4 sm:w-full xs:w-full mb-4"
             value="We organise sales of single properties or portfolios of properties, our services also include guidance on sale and leaseback, due- diligence and suitable agency arrangements."
           />
-          <hr className="h-[2px] w-[90%]  bg-primary-2 mb-6" />
+          <hr className="h-[2px] w-[90%]  bg-primary-2 mb-6 lineBreaker" />
           <Text
             style="text-white text-[1.2rem] font-bold mb-2"
             value="Estate Planning"
@@ -148,12 +148,12 @@ export const Acquisition = () => {
             value="Real estate investment can continue to yield results long after the lifetime of the initial investor, therefore they are very popular generational gifts. At R.E Advisory, we guide clients through the legal and regulatory framework and provide a platform for the safe transfer of these gift as intended."
           />
         </div>
-        <div className="xl:w-1/2  md:w-1/2 sm:w-full xs:w-full xxs:w-full relative sm:h-96 xxs:h-96 xs:h-96 md:h-auto xl:h-auto xl:h-auto">
+        <div className="xl:w-1/2 rounded-xl  md:w-1/2 sm:w-full xs:w-full xxs:w-full relative sm:h-96 xxs:h-96 xs:h-96 md:h-auto xl:h-auto xl:h-auto">
           <Image
             src={frame}
             alt="object not found"
             layout="fill"
-            objectFit="cover"
+            objectFit="contain"
             placeholder="blur"
             className="rounded-xl"
           />

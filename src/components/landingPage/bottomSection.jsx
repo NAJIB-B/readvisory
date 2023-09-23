@@ -25,11 +25,11 @@ const slides = [
     location:"Nkwelle, Anambra State"
   },
   {
-    name: 'Albert Flores',
+    name: 'Mr Ayo Ishola',
     testimony: `In 2021, I hired R.E Advisory to invest in real estate, and they guided me to buy a 3-bedroom terrace house in Abuja's Life Camp area. They assisted with equity payments, NHF application, and now my property has appreciated by over 15%. Thanks to the team!`,
     checkedStar,
     uncheckedStar,
-    location:"Abuja"
+    location:"Lifecamp,Abuja"
   },
 ];
 const BottomSection = () => {

@@ -37,7 +37,16 @@
   background-size: 55% 80%;
   background-image: url('https://i.ibb.co/WkwZZPz/ppty-1.png');
 }
-
+.landingImage{
+  background-image: url('https://i.ibb.co/WkwZZPz/Frame 80437.png');
+}
+.adjImg{
+  margin-top:-3rem;
+}
+.adjWrapper{
+  margin-top: -0.5rem;
+  width: 10rem;
+}
 .who_we_are_grid_container{
   display: grid;
   grid-template-columns: repeat(13, auto);
@@ -52,7 +61,9 @@
   font-size: 30px;
   border-radius: 39px;
 }
-
+.lineBreaker{
+  opacity: 0.3;
+}
 .item1 {
   grid-column-start: 6;
   grid-column-end: 9;
@@ -165,14 +176,11 @@
   background-size: contain;
   border: 2px solid #7676802B;
 }
-<<<<<<< HEAD
 @media (min-width: 320px){
 .landing-img{
     width: -webkit-fill-available!important;
 }
 }
-=======
->>>>>>> 168796e5bc4ab48e346ab9966edcb1ad5780fdf9
 .mortgauge-form{
   background-color: #7676802B;
   border: 1px solid #7676802B;

@@ -15,8 +15,8 @@ export const LinedInfo = ({ num, title, info,morgauge }) => {
             type="button"
             data-te-toggle="modal"
             data-te-target="#exampleModalCenter"
-            data-te-ripple-init
-            data-te-ripple-color="light"
+            // data-te-ripple-init
+            // data-te-ripple-color="light"
             >Check Mortgauge Calculator</h6>
         </span>:
         <Text
