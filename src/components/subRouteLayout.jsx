@@ -15,9 +15,9 @@ export const SubRouteLayout = ({ children, title, bgUrl }) => {
         }}
         className=" pt-36 pb-20 w-full border BgImage"
       >
-        <div className="w-fit m-auto">
+        <div className="w-fit m-auto my-4">
             <div>
-              <h1 className="text-2xl md:text-4xl text-center text-white font-bold">
+              <h1 className="text-2xl md:text-4xl text-center text-white font-bold px-4 ">
                 {title}
               </h1>
             </div>
