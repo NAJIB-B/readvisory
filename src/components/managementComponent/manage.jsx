@@ -34,8 +34,8 @@ export const ManagementComponent = () => {
             ></Image>
           </div>
         </div>
-        <div className="flex border flex-col-reverse justify-between items-center gap-8  md:flex-row">
-          <div className="md:w-[50%] border">
+        <div className="flex flex-col-reverse justify-between items-center gap-8  md:flex-row">
+          <div className="md:w-[50%]">
             <Image
               src={facilityMgt}
               alt="beautiful"
