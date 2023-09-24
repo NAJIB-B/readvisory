@@ -81,7 +81,7 @@ export const ManagementComponent = () => {
               </p>
             </div>
           </div>
-          <div className="md:w-[40%] flex flex-col items-end justify-end">
+          <div className="md:w-[40%] sm:w-[100%] xs:w-[100%] xxs:w-[100%] xxxs:w-[100%] xl:w-[40%] lg:w-[40%] flex flex-col items-end justify-end">
             <Image
               src={leaseMgt}
               alt="beautiful"
