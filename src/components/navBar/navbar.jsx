@@ -73,7 +73,7 @@ const NavBar = () => {
               );
             })}
             {/* display search icon with different sizes based on screen size */}
-            <span 
+            {/* <span 
               className="hidden lg:block"
               type="button" 
               data-te-toggle="modal"
@@ -102,7 +102,7 @@ const NavBar = () => {
                 width={16}
                 height={16}
               ></Image>
-            </span>
+            </span> */}
             <div 
               onClick={()=>router.push('/talk-to-us')}
               >

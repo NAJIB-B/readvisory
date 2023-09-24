@@ -31,7 +31,7 @@ const MobileNav = () => {
           </p>
         </div>
         <div className="flex items-center gap-4 flex-row">
-          <span
+          {/* <span
             className="lg:hidden"
             type="button" 
             data-te-toggle="modal"
@@ -45,7 +45,7 @@ const MobileNav = () => {
               width={16}
               height={16}
             ></Image>
-          </span>
+          </span> */}
           <span onClick={toggleNav}>
             <Image
               src={menuIcon}
