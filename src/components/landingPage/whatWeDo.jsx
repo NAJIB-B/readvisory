@@ -31,7 +31,7 @@ const WhatWeDo = () => {
             heading: 'Advisory',
             link: '/advisory',
             content:
-              ' Investments, Acquisitions, Financing, Reviews, Transfers & Estate Planning',
+              ' Mortage and property financing, Reviews, Transfers & Estate Planning',
           },
           {
             icon: developmentIcon,

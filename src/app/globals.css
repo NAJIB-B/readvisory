@@ -16,6 +16,8 @@
   }
 }
 
+
+
 .c-gold{
   color:#CEA964;
 }
@@ -122,9 +124,12 @@
 }
 .swiper-button-prev::after{
   color: #CEA964;
+  margin-bottom: 3rem;
+
 }
 .swiper-button-next::after{
   color: #CEA964;
+  margin-bottom: 3rem;
 }
 .advisoryPageGrid {
   display: grid;

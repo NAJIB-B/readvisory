@@ -25,8 +25,18 @@ import frame5 from '../../../public/images/our work3.jpeg';
 import frame6 from '../../../public/images/our work4.jpeg';
 import frame7 from '../../../public/images/ourwork5.jpeg';
 import frame8 from '../../../public/images/ourWork1.jpeg';
+import frame9 from '../../../public/images/topCarouselImg.png';
 
-const slideImages = [frame1, frame3, frame4, frame5, frame6, frame7, frame8];
+const slideImages = [
+  frame1,
+  frame3,
+  frame4,
+  frame5,
+  frame6,
+  frame7,
+  frame8,
+  frame9,
+];
 
 const TopSectionSlide = () => {
   return (

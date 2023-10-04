@@ -3,7 +3,7 @@ import Image from 'next/image';
 import polygon from '../../../public/images/managementPolygon.png';
 import greyPolygon from '../../../public/images/greyPolygon.png';
 import assetMgt from '../../../public/images/assetMgt.svg';
-import facilityMgt from '../../../public/images/facilityMgt.svg';
+import facilityMgt from '../../../public/images/facilityMgt.jpeg';
 import leaseMgt from '../../../public/images/leaseMgt.svg';
 import leaseMgt2 from '../../../public/images/image 21.png';
 
@@ -74,10 +74,11 @@ export const ManagementComponent = () => {
                 Lease & Tenancy Management
               </h2>
               <p className="text-secondary-12 md:text-[1.3rem]">
-              At R.E Advisory we understand that Rent should count as passive income, 
-              to help our clients achieve dream, we deploy our experience to manage leasehold properties, 
-              thereby providing hassle-free returns for the property owner, 
-              while guaranteeing the occupier a peaceful enjoyment of the property.
+                At R.E Advisory we understand that Rent should count as passive
+                income, to help our clients achieve dream, we deploy our
+                experience to manage leasehold properties, thereby providing
+                hassle-free returns for the property owner, while guaranteeing
+                the occupier a peaceful enjoyment of the property.
               </p>
             </div>
           </div>
@@ -96,22 +97,23 @@ export const ManagementComponent = () => {
       <div className="bg-secondary-10 pb-[4rem] z-30 relative px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl">
         <div className="flex md:flex-row lg:flex-row xl:flex-row sm:flex-col-reverse xs:flex-col-reverse xxs:flex-col-reverse xxxs:flex-col-reverse justify-between items-center gap-4 pb-[3rem]">
           <div className="md:w-[40%] flex flex-col">
-              <Image
-                src={leaseMgt2}
-                alt="beautiful"
-                className="rounded-[1.25rem] object-cover  h-[15rem] w-full"
-              ></Image>
+            <Image
+              src={leaseMgt2}
+              alt="beautiful"
+              className="rounded-[1.25rem] object-cover  h-[15rem] w-full"
+            ></Image>
           </div>
           <div className="md:w-[50%]">
             <div>
               <h2 className="font-bold text-white pb-4 text-[1.5rem] ">
-              Transaction Documentation
+                Transaction Documentation
               </h2>
               <p className="text-secondary-12 md:text-[1.3rem]">
-                We prepare comprehensive transaction documentation, including offer letters, 
-                negotiation instruments, tenancy and lease agreements, sales agreements, 
-                deeds, wills and codicils and other instruments of transfer with the aim of securing 
-                the clients’ interests.
+                We prepare comprehensive transaction documentation, including
+                offer letters, negotiation instruments, tenancy and lease
+                agreements, sales agreements, deeds, wills and codicils and
+                other instruments of transfer with the aim of securing the
+                clients’ interests.
               </p>
             </div>
           </div>

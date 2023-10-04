@@ -56,17 +56,14 @@ const NavBar = () => {
           </div>
           <div className="flex flex-row gap-3 lg:gap-8 xl:gap-[3rem] items-center">
             {navLinks.map((arrlink, index) => {
-              const{
-                link,
-                name
-              }=arrlink
+              const { link, name } = arrlink;
               return (
                 <div
-                  onClick={()=>router.push(link)}
+                  onClick={() => router.push(link)}
                   key={index}
                   className={`${
                     pathname == link ? 'text-primary-2' : 'text-white'
-                  } font-semibold text-[0.8rem] lg:text-[1rem]`}
+                  } font-semibold text-[0.8rem] lg:text-[1rem] cursor-pointer`}
                 >
                   {name}
                 </div>
@@ -103,9 +100,7 @@ const NavBar = () => {
                 height={16}
               ></Image>
             </span> */}
-            <div 
-              onClick={()=>router.push('/talk-to-us')}
-              >
+            <div onClick={() => router.push('/talk-to-us')}>
               <Button
                 text={'Talk to us'}
                 textStyle={'text-primary-1 text-[0.8rem] lg:text-[1rem]'}
