@@ -20,8 +20,13 @@ import Image from 'next/image';
 
 import frame1 from '../../../public/images/frame1.jpeg';
 import frame3 from '../../../public/images/frame3.jpeg';
+import frame4 from '../../../public/images/ourwork2.jpeg';
+import frame5 from '../../../public/images/our work3.jpeg';
+import frame6 from '../../../public/images/our work4.jpeg';
+import frame7 from '../../../public/images/ourwork5.jpeg';
+import frame8 from '../../../public/images/ourWork1.jpeg';
 
-const slideImages = [frame1, frame3];
+const slideImages = [frame1, frame3, frame4, frame5, frame6, frame7, frame8];
 
 const TopSectionSlide = () => {
   return (
@@ -40,7 +45,7 @@ const TopSectionSlide = () => {
                 <Image
                   src={item}
                   alt="beautiful house"
-                  className="w-full bg-contain h-[65vh]"
+                  className="w-full bg-contain h-[65vh] object-cover"
                 ></Image>
               </SwiperSlide>
             );

@@ -5,6 +5,7 @@ import greyPolygon from '../../../public/images/greyPolygon.png';
 import assetMgt from '../../../public/images/assetMgt.svg';
 import facilityMgt from '../../../public/images/facilityMgt.svg';
 import leaseMgt from '../../../public/images/leaseMgt.svg';
+import leaseMgt2 from '../../../public/images/image 21.png';
 
 export const ManagementComponent = () => {
   return (
@@ -65,31 +66,55 @@ export const ManagementComponent = () => {
           className=" z-30 absolute right-0   top-0 bottom-0 opacity-[20%]"
         ></Image>
       </div>
-      <div className="bg-secondary-10 py-[4rem] z-30 relative px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl">
+      <div className="bg-secondary-10 pt-[6rem] py-[4rem] z-30 relative px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl">
         <div className="flex flex-col justify-between items-center gap-4 pb-[3rem] md:flex-row">
           <div className="md:w-[50%]">
-            <div className="md:w-[85%]">
+            <div>
               <h2 className="font-bold text-white pb-4 text-[1.5rem] ">
                 Lease & Tenancy Management
               </h2>
               <p className="text-secondary-12 md:text-[1.3rem]">
-                We understand that rent should count as passive income. At R. E
-                Advisory, we manage leasehold properties, aimed at providing
-                hassle free income to the Landlord while guaranteeing peaceful
-                enjoyment to the occupier.
+              At R.E Advisory we understand that Rent should count as passive income, 
+              to help our clients achieve dream, we deploy our experience to manage leasehold properties, 
+              thereby providing hassle-free returns for the property owner, 
+              while guaranteeing the occupier a peaceful enjoyment of the property.
               </p>
             </div>
           </div>
-          <div className="md:w-[50%]">
+          <div className="md:w-[40%] sm:w-[100%] xs:w-[100%] xxs:w-[100%] xxxs:w-[100%] xl:w-[40%] lg:w-[40%] flex flex-col items-end justify-end">
             <Image
               src={leaseMgt}
               alt="beautiful"
-              className=" rounded-[1.25rem] md:w-[75%]"
+              className=" rounded-[1.25rem] object-cover  h-[15rem] w-full"
             ></Image>
           </div>
         </div>
-        <div className="relative  text-center pt-[2rem] pb-[3rem] ">
+        <div className="relative  text-center pt-[2rem] pb-[2rem] ">
           <span className="absolute after:content-[' ']  bg-primary-2 w-[6rem] h-[3px] left-[50%] translate-y-[-50%] translate-x-[-50%]"></span>
+        </div>
+      </div>
+      <div className="bg-secondary-10 pb-[4rem] z-30 relative px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl">
+        <div className="flex md:flex-row lg:flex-row xl:flex-row sm:flex-col-reverse xs:flex-col-reverse xxs:flex-col-reverse xxxs:flex-col-reverse justify-between items-center gap-4 pb-[3rem]">
+          <div className="md:w-[40%] flex flex-col">
+              <Image
+                src={leaseMgt2}
+                alt="beautiful"
+                className="rounded-[1.25rem] object-cover  h-[15rem] w-full"
+              ></Image>
+          </div>
+          <div className="md:w-[50%]">
+            <div>
+              <h2 className="font-bold text-white pb-4 text-[1.5rem] ">
+              Transaction Documentation
+              </h2>
+              <p className="text-secondary-12 md:text-[1.3rem]">
+                We prepare comprehensive transaction documentation, including offer letters, 
+                negotiation instruments, tenancy and lease agreements, sales agreements, 
+                deeds, wills and codicils and other instruments of transfer with the aim of securing 
+                the clients’ interests.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </>

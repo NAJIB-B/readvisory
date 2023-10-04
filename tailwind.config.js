@@ -7,6 +7,7 @@ module.exports = {
   ],
   theme: {
     screens: {
+      xxxs: '320px',
       xxs: '340px',
       xs: '475px',
       sm: '640px',
@@ -54,5 +55,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tw-elements/dist/plugin.cjs")],
 };

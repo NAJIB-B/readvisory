@@ -22,7 +22,7 @@ import Image from 'next/image';
 
 const SliderWithPreview = ({ slides }) => {
   return (
-    <div>
+    <div className='p-2'>
       <Swiper
         modules={[
           Navigation,
@@ -70,12 +70,9 @@ const SliderWithPreview = ({ slides }) => {
                     ></Image>
                   </div>
                   <p className="text-[13px]">
-                    We stayed at Keji’s place for 4 days last week and were
-                    blown away by the experience, from the inception to the
-                    after care experience.The pictures that advertise the
-                    property don’t do it justice; the home is tastefully
-                    furnished with all your mod cons and then more.
+                    {slide.testimony}
                   </p>
+                  <p className="font-semibold text-[11px] p-1">{slide.location}</p>
                 </div>
               )}
             </SwiperSlide>

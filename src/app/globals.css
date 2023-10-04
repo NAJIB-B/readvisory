@@ -16,8 +16,17 @@
   }
 }
 
-body {
-
+.c-gold{
+  color:#CEA964;
+}
+.Border{
+  border-bottom: 10px solid #CEA964;
+  border-style: double;
+  padding: 2rem;
+  border-radius: 0px 0px 50px 50px;
+}
+.bg-gold{
+  background-color: #CEA964;
 }
 .swiper-pagination-bullet-active{
   background-color: #CEA964 !important;
@@ -28,7 +37,19 @@ body {
   background-size: 55% 80%;
   background-image: url('https://i.ibb.co/WkwZZPz/ppty-1.png');
 }
-
+.landingImage{
+  background-image: url('https://i.ibb.co/WkwZZPz/Frame 80437.png');
+}
+.adjImg{
+  margin-top:-2.5rem;
+}
+.h-15{
+  height: 3.5rem;
+}
+.adjWrapper{
+  margin-top: -0.5rem;
+  width: -webkit-fill-available;
+}
 .who_we_are_grid_container{
   display: grid;
   grid-template-columns: repeat(13, auto);
@@ -43,7 +64,9 @@ body {
   font-size: 30px;
   border-radius: 39px;
 }
-
+.lineBreaker{
+  opacity: 0.3;
+}
 .item1 {
   grid-column-start: 6;
   grid-column-end: 9;
@@ -74,7 +97,17 @@ body {
   grid-row-start:5;
   grid-row-end:7;
 }
-
+.doubleBorder{
+  border-radius: 0px, 240px, 240px;
+  border: 0px, 0px, 11px, 0px;
+  Opacity: 10%;
+  border-color: #CEA964;
+  border-style: double;
+}
+.morgauge-text{
+  color:#CEA964;
+  border-bottom: 1px solid #CEA964;
+}
 .devPageShadowRight{
   box-shadow: 15px 9px 0 0 rgb(25,25,25), 16px 10px 0 0 rgba(206,169,100,1);
 }
@@ -136,9 +169,7 @@ body {
 .c-top-black{
   color:#767676;
 }
-.c-gold{
-  color:#CEA964;
-}
+
 .bg-thindark-black{
   background-color:#222222;
 }
@@ -147,6 +178,15 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   border: 2px solid #7676802B;
+}
+@media (min-width: 320px){
+.landing-img{
+    width: -webkit-fill-available!important;
+}
+}
+.mortgauge-form{
+  background-color: #7676802B;
+  border: 1px solid #7676802B;
 }
 .mt-1-{
   margin-top: -0.1rem;
