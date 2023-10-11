@@ -11,7 +11,7 @@ import backgroundImage from '../../../public/images/layerBeforeFooter.png';
 
 const slides = [
   {
-    name: 'Mr Isioma',
+    name: 'Mr Ayo',
     testimony: `In late 2022, we moved to Abuja for work with our two kids. R.E Advisory helped us find an affordable, serene home, handled negotiations, and arranged a comfortable mortgage. Their professionalism impressed us, and our kids love the new house. Highly recommend their services to future homeowners.`,
     checkedStar,
     uncheckedStar,

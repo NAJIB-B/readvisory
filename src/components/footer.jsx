@@ -58,7 +58,7 @@ export const Footer = ({ paddingTop = '3.5rem' }) => {
             {[
               {
                 icon: call,
-                text: '+234 - 90995000',
+                text: '+234 - 8090995000',
               },
               {
                 icon: location,
@@ -151,7 +151,7 @@ export const Footer = ({ paddingTop = '3.5rem' }) => {
           </div>
           <div>
             <Text style="text-xs c-top-black" value="Need Help? Call Us Now" />
-            <Text style="text-xs c-top-black" value="+234 - 90995000" />
+            <Text style="text-xs c-top-black" value="+234 - 8090995000" />
           </div>
         </div>
       </div>

@@ -94,7 +94,7 @@ export const ManagementComponent = () => {
           <span className="absolute after:content-[' ']  bg-primary-2 w-[6rem] h-[3px] left-[50%] translate-y-[-50%] translate-x-[-50%]"></span>
         </div>
       </div>
-      <div className="bg-secondary-10 pb-[4rem] z-30 relative px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl">
+      {/* <div className="bg-secondary-10 pb-[4rem] z-30 relative px-container-md md:px-container-md lg:px-container-lg xl:px-container-xl">
         <div className="flex md:flex-row lg:flex-row xl:flex-row sm:flex-col-reverse xs:flex-col-reverse xxs:flex-col-reverse xxxs:flex-col-reverse justify-between items-center gap-4 pb-[3rem]">
           <div className="md:w-[40%] flex flex-col">
             <Image
@@ -118,7 +118,7 @@ export const ManagementComponent = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
