@@ -7,7 +7,7 @@ import { Footer } from '@/components/footer';
 import { Blog } from '@/components/landingPage/blog';
 
 export const metadata = {
-  title: 'Real estate agency | Readvisory.ng',
+  title: 'Real estate advisory | Readvisory.ng',
   description:
     'Independent property firm, offering real estate investment, finance, development and management services',
   robots: 'all',

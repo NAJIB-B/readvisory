@@ -3,7 +3,7 @@ import Image from 'next/image';
 import polygon from '../../../public/images/managementPolygon.png';
 import greyPolygon from '../../../public/images/greyPolygon.png';
 import assetMgt from '../../../public/images/assetMgt.svg';
-import facilityMgt from '../../../public/images/facilityMgt.jpeg';
+import facilityMgt from '../../../public/images/facilityMgt.svg';
 import leaseMgt from '../../../public/images/leaseMgt.svg';
 import leaseMgt2 from '../../../public/images/image 21.png';
 

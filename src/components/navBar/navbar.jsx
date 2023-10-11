@@ -63,7 +63,7 @@ const NavBar = () => {
                   key={index}
                   className={`${
                     pathname == link ? 'text-primary-2' : 'text-white'
-                  } font-semibold text-[0.8rem] lg:text-[1rem] cursor-pointer`}
+                  } font-semibold text-[0.8rem] lg:text-[1.2rem] cursor-pointer`}
                 >
                   {name}
                 </div>
