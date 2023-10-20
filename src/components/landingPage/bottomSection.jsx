@@ -11,7 +11,7 @@ import backgroundImage from '../../../public/images/layerBeforeFooter.png';
 
 const slides = [
   {
-    name: 'Mr Ayo',
+    name: 'Ayo',
     testimony: `In late 2022, we moved to Abuja for work with our two kids. R.E Advisory helped us find an affordable, serene home, handled negotiations, and arranged a comfortable mortgage. Their professionalism impressed us, and our kids love the new house. Highly recommend their services to future homeowners.`,
     checkedStar,
     uncheckedStar,
@@ -25,7 +25,7 @@ const slides = [
     location: 'Nkwelle, Anambra State',
   },
   {
-    name: 'Mr Isioma',
+    name: 'Isioma',
     testimony: `In 2021, I hired R.E Advisory to invest in real estate, and they guided me to buy a 3-bedroom terrace house in Abuja's Life Camp area. They assisted with equity payments, NHF application, and now my property has appreciated by over 15%. Thanks to the team!`,
     checkedStar,
     uncheckedStar,
